@@ -1,5 +1,4 @@
 "use client";
-
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -12,14 +11,11 @@ type NavigationProps = {
 
 export default function MainNavigation({ navLinks }: NavigationProps) {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <nav className="flex items-center gap-6 font-medium tracking-wide">
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
-        console.log(isActive);
-
         return (
           <Link
             className={

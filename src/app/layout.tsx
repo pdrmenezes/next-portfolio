@@ -1,5 +1,5 @@
-import Link from "next/link";
 import "./globals.css";
+import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
 import whiteIcon from "./white_icon.svg";
@@ -69,8 +69,8 @@ const navLinks = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={nohemi.className}>
-      <body className="flex flex-col h-screen bg-blackish text-whiteish p-4">
-        <header className="flex flex-col gap-2 md:flex-row lg:flex-row justify-between items-center px-6 py-4 text-white text-center">
+      <body className="flex flex-col h-screen bg-blackish text-whiteish p-4 scroll-smooth">
+        <header className="flex flex-col gap-2 md:flex-row lg:flex-row justify-between items-center px-6 py-4 text-white text-center" id="top">
           <Link href="/">
             <Image className="animate-pulse md:scale-150 transition-transform" src={whiteIcon} alt="white icon" width={40} height={40} />
           </Link>

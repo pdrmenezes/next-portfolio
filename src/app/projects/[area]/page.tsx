@@ -1,3 +1,4 @@
+"use client";
 import MainCard from "@/components/MainCard";
 import SkinnyCard from "@/components/SkynnyCard";
 import BackToTop from "@/components/BackToTop";
@@ -7,9 +8,12 @@ import NoOutlineCard from "@/components/NoOutlineCard";
 import HalfOutlinedNumberedCard from "@/components/HalfOutlinedNumberedCard";
 import FilledCard from "@/components/FilledCard";
 import OutlinedNumberedCard from "@/components/OutlinedNumberedCard";
+import { usePathname } from "next/navigation";
 
 export default function AreaPage({ params }: { params: { area: string } }) {
   const { area } = params;
+  const pathname = usePathname();
+
   return (
     <div className="flex flex-col gap-4">
       <div className="flex gap-x-4 rounded-xl w-full h-60">
@@ -41,7 +45,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
           borderColor="whiteish"
         />
       </div>
-      <BackToTop page={area} />
+      <BackToTop pathname={pathname} />
     </div>
   );
 }
