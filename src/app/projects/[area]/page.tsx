@@ -1,13 +1,13 @@
 "use client";
-import MainCard from "@/components/MainCard";
-import SkinnyCard from "@/components/SkynnyCard";
 import BackToTop from "@/components/BackToTop";
-import OutlinedCard from "@/components/OutlinedCard";
-import FilledNumberedCard from "@/components/FilledNumberedCard";
-import NoOutlineCard from "@/components/NoOutlineCard";
-import HalfOutlinedNumberedCard from "@/components/HalfOutlinedNumberedCard";
-import FilledCard from "@/components/FilledCard";
-import OutlinedNumberedCard from "@/components/OutlinedNumberedCard";
+import MainCard from "@/components/Cards/MainCard";
+import SkinnyCard from "@/components/Cards/SkynnyCard";
+import OutlinedCard from "@/components/Cards/OutlinedCard";
+import FilledNumberedCard from "@/components/Cards/FilledNumberedCard";
+import NoOutlineCard from "@/components/Cards/NoOutlineCard";
+import HalfOutlinedNumberedCard from "@/components/Cards/HalfOutlinedNumberedCard";
+import OutlinedNumberedCard from "@/components/Cards/OutlinedNumberedCard";
+import FilledCard from "@/components/Cards/FilledCard";
 import { usePathname } from "next/navigation";
 
 export default function AreaPage({ params }: { params: { area: string } }) {
@@ -25,7 +25,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
         <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="01" bgColor="whiteish" />
       </div>
       <div className="flex gap-x-4 rounded-xl w-full h-60">
-        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="03" bgColor="[khaki]" />
+        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="03" bgColor="khaki" />
         <NoOutlineCard />
       </div>
       <div className="flex gap-x-4 rounded-xl w-full h-60">
@@ -33,7 +33,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
           <HalfOutlinedNumberedCard />
           <HalfOutlinedNumberedCard />
         </div>
-        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="06" bgColor="[lightgreen]" />
+        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="06" bgColor="lightsteelblue" />
       </div>
       <div className="flex gap-x-4 rounded-xl w-full h-60">
         <FilledCard />
