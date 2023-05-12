@@ -22,10 +22,10 @@ export default function AreaPage({ params }: { params: { area: string } }) {
       </div>
       <div className="flex gap-x-4 rounded-xl w-full h-60">
         <OutlinedCard />
-        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="01" bgColor="whiteish" />
+        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="01" bgColor="bg-whiteish" />
       </div>
       <div className="flex gap-x-4 rounded-xl w-full h-60">
-        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="03" bgColor="khaki" />
+        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="03" bgColor="bg-khaki" />
         <NoOutlineCard />
       </div>
       <div className="flex gap-x-4 rounded-xl w-full h-60">
@@ -33,7 +33,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
           <HalfOutlinedNumberedCard />
           <HalfOutlinedNumberedCard />
         </div>
-        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="06" bgColor="lightsteelblue" />
+        <FilledNumberedCard tag="tag" paragraph="small cute paragraph with 2 lines of text, maybe?" number="06" bgColor="bg-lightgreen" />
       </div>
       <div className="flex gap-x-4 rounded-xl w-full h-60">
         <FilledCard />
@@ -41,8 +41,8 @@ export default function AreaPage({ params }: { params: { area: string } }) {
           tag="tag"
           paragraph="small cute paragraph with 2 lines of text, maybe?"
           number="06"
-          textColor="whiteish"
-          borderColor="whiteish"
+          textColor="text-whiteish"
+          borderColor="border-whiteish"
         />
       </div>
       <BackToTop pathname={pathname} />
