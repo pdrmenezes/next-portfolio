@@ -2,7 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
-import whiteIcon from "./white_icon.svg";
+import whiteIcon from "@/assets/white_icon.svg";
 import MainNavigation from "@/components/MainNavigation";
 
 export const metadata = {

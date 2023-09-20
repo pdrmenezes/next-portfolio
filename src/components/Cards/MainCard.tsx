@@ -1,5 +1,5 @@
 import Image from "next/image";
-import blackTriangle from "@/app/black_triangle.svg";
+import blackTriangle from "@/assets/black_triangle.svg";
 
 export default function MainCard({
   mainText = "Big Beautiful Title Text in or PT/EN",

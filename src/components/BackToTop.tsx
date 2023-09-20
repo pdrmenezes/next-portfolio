@@ -1,5 +1,5 @@
 import Image from "next/image";
-import whiteTriangle from "@/app/white_triangle.svg";
+import whiteTriangle from "@/assets/white_triangle.svg";
 import Link from "next/link";
 
 export default function BackToTop({ pathname }: { pathname: string }) {

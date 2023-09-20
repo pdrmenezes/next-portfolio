@@ -1,11 +1,9 @@
 import FilledCard from "@/components/Cards/FilledCard";
 import FilledNumberedCard from "@/components/Cards/FilledNumberedCard";
-import MainCard from "@/components/Cards/MainCard";
 import OutlinedCard from "@/components/Cards/OutlinedCard";
 import OutlinedNumberedCard from "@/components/Cards/OutlinedNumberedCard";
 import PlayingCard from "@/components/PlayingCard/PlayingCard";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ProjectsPage() {
   return (
