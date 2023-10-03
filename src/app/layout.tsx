@@ -2,7 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
-import whiteIcon from "./white_icon.svg";
+import whiteIcon from "@/assets/white_icon.svg";
 import MainNavigation from "@/components/MainNavigation";
 
 export const metadata = {
@@ -69,14 +69,14 @@ const navLinks = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={nohemi.className}>
-      <body className="flex flex-col h-screen bg-blackish text-whiteish p-4 scroll-smooth">
-        <header className="flex flex-col gap-2 md:flex-row lg:flex-row justify-between items-center px-6 py-4 text-white text-center" id="top">
+      <body className="flex flex-col h-screen bg-blackish text-whiteish p-4 scroll-smooth antialiased">
+        <header className="flex flex-col gap-4 md:flex-row lg:flex-row justify-between items-center px-6 py-4 text-white text-center" id="top">
           <Link href="/">
             <Image className="animate-pulse md:scale-150 transition-transform" src={whiteIcon} alt="white icon" width={40} height={40} />
           </Link>
           <MainNavigation navLinks={navLinks} />
         </header>
-        <main className="flex-1 overflow-y-auto px-10 py-40 lg:px-20">{children}</main>
+        <main className="flex-1 overflow-y-auto px-8 py-40 lg:px-20">{children}</main>
       </body>
     </html>
   );
