@@ -21,7 +21,7 @@ export default function ContactPage() {
       <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">contact</h1>
       <div className="grid sm:grid-cols-1 sm:grid-rows-4 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-10 gap-5">
         <div
-          className="cursor-pointer hover:outline hover:outline-2 hover:outline-whiteish rounded-md md:p-4"
+          className="cursor-pointer hover:outline hover:outline-2 hover:outline-whiteish rounded-md p-2 md:p-4"
           onClick={() => copyToClipboard("pdrmenezes1@gmail.com")}
         >
           <h2 className="font-semibold">EMAIL</h2>
@@ -37,7 +37,7 @@ export default function ContactPage() {
           href="https://www.github.com/pdrmenezes"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:outline hover:outline-2 hover:outline-whiteish rounded-md md:p-4"
+          className="hover:outline hover:outline-2 hover:outline-whiteish rounded-md p-2 md:p-4"
         >
           <h2 className="font-semibold">GITHUB</h2>
           <p>/pdrmenezes</p>
@@ -46,12 +46,12 @@ export default function ContactPage() {
           href="https://www.instagram.com/pdrmenezes"
           target="_blank"
           rel="noopener noreferrer"
-          className="md:row-start-2 md:col-start-1 hover:outline hover:outline-2 hover:outline-whiteish rounded-md md:p-4"
+          className="md:row-start-2 md:col-start-1 hover:outline hover:outline-2 hover:outline-whiteish rounded-md p-2 md:p-4"
         >
           <h2 className="font-semibold">INSTAGRAM</h2>
           <p>@pdrmenezes</p>
         </a>
-        <div className="md:row-start-2 md:col-start-2 md:p-4">
+        <div className="md:row-start-2 md:col-start-2 p-2 md:p-4">
           <h2 className="font-semibold">_</h2>
           <p>your turn (:</p>
         </div>

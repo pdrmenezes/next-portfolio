@@ -13,7 +13,7 @@ export default function AreaNavigation({ navLinks }: NavigationProps) {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col gap-2 md:gap-10 md:flex-row">
+    <div className="flex gap-4 md:gap-10 ">
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
         return (
