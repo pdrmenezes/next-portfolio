@@ -27,10 +27,10 @@ export default function ContactPage() {
           <h2 className="font-semibold">EMAIL</h2>
           <p>pdrmenezes1@gmail.com</p>
           <div
-            className="fixed left-1/2 bottom-8 bg-whiteish p-4 text-blackish text-center text-sm font-medium min-w-[250px] -ml-[125px] rounded-lg"
+            className="fixed left-1/2 bottom-8 bg-whiteish p-4 text-blackish text-center text-sm font-medium min-w-[200px] -ml-[100px] rounded-lg"
             id="email-toast"
           >
-            <span className="mr-1">✅</span> Email copied to the clipboard
+            <span className="mr-1">✅</span> Email copied to clipboard
           </div>
         </div>
         <a
