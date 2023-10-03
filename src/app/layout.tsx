@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Link>
           <MainNavigation navLinks={navLinks} />
         </header>
-        <main className="flex-1 overflow-y-auto px-8 py-40 lg:px-20">{children}</main>
+        <main className="flex-1 overflow-y-auto px-8 py-20 md:py-40 lg:px-20">{children}</main>
       </body>
     </html>
   );

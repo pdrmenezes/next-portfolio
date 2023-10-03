@@ -10,7 +10,7 @@ const navLinks = [
 export default function ProjectsLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <div className="flex flex-col gap-2 h-full justify-start">
+      <div className="flex flex-col gap-2 h-fit mb-10 md:mb-0 md:h-full justify-start">
         <Link href={"/projects"}>
           <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">projects</h1>
         </Link>

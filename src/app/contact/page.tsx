@@ -19,7 +19,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col gap-2 h-full justify-start">
       <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">contact</h1>
-      <div className="grid sm:grid-cols-1 sm:grid-rows-4 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-10 gap-5">
+      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-3 md:grid-rows-2 md:gap-y-10 gap-4">
         <div
           className="cursor-pointer hover:outline hover:outline-2 hover:outline-whiteish rounded-md p-2 md:p-4"
           onClick={() => copyToClipboard("pdrmenezes1@gmail.com")}
