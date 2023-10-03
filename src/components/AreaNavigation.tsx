@@ -13,15 +13,15 @@ export default function AreaNavigation({ navLinks }: NavigationProps) {
   const pathname = usePathname();
 
   return (
-    <div className="flex gap-10 py-1">
+    <div className="flex flex-col gap-2 md:gap-10 md:flex-row">
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
         return (
           <Link
             className={
               isActive
-                ? "text-[clamp(1.5rem,5vw,3.125rem)] font-medium border-b border-whiteish transition-all"
-                : "text-[clamp(1.5rem,5vw,3.125rem)] font-medium hover:border-b hover:border-whiteish transition-all"
+                ? "text-2xl md:text-3xl underline underline-offset-4 md:underline-offset-8 font-medium transition-all"
+                : "text-2xl md:text-3xl underline md:no-underline underline-offset-4 md:underline-offset-8 font-medium hover:underline transition-all"
             }
             href={link.href}
             key={link.name}

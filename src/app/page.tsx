@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-2 h-full justify-center">
       <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">hi, i’m Pedro,</h1>
-      <div>
+      <div className="group">
         <h2 className="text-[clamp(1.5rem,5vw,3.125rem)] font-medium">
           a brazilian{" "}
-          <Link href={"/projects"}>
+          <Link href={"/projects"} className="group-hover:tracking-wide transition-all">
             <span className="underline underline-offset-8 cursor-pointer">software developer</span>
             <span className="cursor-pointer"> ‣</span>
           </Link>{" "}

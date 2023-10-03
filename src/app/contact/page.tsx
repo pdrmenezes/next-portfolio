@@ -1,22 +1,58 @@
+"use client";
+import "./styles.css";
+
 export default function ContactPage() {
+  async function copyToClipboard(text: string) {
+    const toastDiv = document.getElementById("email-toast");
+
+    try {
+      await navigator.clipboard.writeText(text);
+      toastDiv!.classList.add("show");
+      setTimeout(() => {
+        toastDiv!.classList.remove("show");
+      }, 3000);
+    } catch (err) {
+      console.log("Failed to copy Email.");
+    }
+  }
+
   return (
-    <div className="flex flex-col gap-2 h-full justify-center">
+    <div className="flex flex-col gap-2 h-full justify-start">
       <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">contact</h1>
-      <div className="grid sm:grid-cols-1 sm:grid-rows-4  md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-10 gap-5">
-        <div className="">
-          <h2>EMAIL</h2>
+      <div className="grid sm:grid-cols-1 sm:grid-rows-4 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-10 gap-5">
+        <div
+          className="cursor-pointer hover:outline hover:outline-2 hover:outline-whiteish rounded-md md:p-4"
+          onClick={() => copyToClipboard("pdrmenezes1@gmail.com")}
+        >
+          <h2 className="font-semibold">EMAIL</h2>
           <p>pdrmenezes1@gmail.com</p>
+          <div
+            className="fixed left-1/2 bottom-8 bg-whiteish p-4 text-blackish text-center text-sm font-medium min-w-[250px] -ml-[125px] rounded-lg"
+            id="email-toast"
+          >
+            <span className="mr-1">✅</span> Email copied to the clipboard
+          </div>
         </div>
-        <div className="col-span-2">
-          <h2>GITHUB</h2>
+        <a
+          href="https://www.github.com/pdrmenezes"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:outline hover:outline-2 hover:outline-whiteish rounded-md md:p-4"
+        >
+          <h2 className="font-semibold">GITHUB</h2>
           <p>/pdrmenezes</p>
-        </div>
-        <div className="">
-          <h2>INSTAGRAM</h2>
+        </a>
+        <a
+          href="https://www.instagram.com/pdrmenezes"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:row-start-2 md:col-start-1 hover:outline hover:outline-2 hover:outline-whiteish rounded-md md:p-4"
+        >
+          <h2 className="font-semibold">INSTAGRAM</h2>
           <p>@pdrmenezes</p>
-        </div>
-        <div className="col-span-2">
-          <h2>_</h2>
+        </a>
+        <div className="md:row-start-2 md:col-start-2 md:p-4">
+          <h2 className="font-semibold">_</h2>
           <p>your turn (:</p>
         </div>
       </div>
