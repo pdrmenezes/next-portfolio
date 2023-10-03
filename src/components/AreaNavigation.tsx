@@ -20,8 +20,8 @@ export default function AreaNavigation({ navLinks }: NavigationProps) {
           <Link
             className={
               isActive
-                ? "text-2xl md:text-3xl underline underline-offset-4 md:underline-offset-8 font-medium transition-all"
-                : "text-2xl md:text-3xl underline md:no-underline underline-offset-4 md:underline-offset-8 font-medium hover:underline transition-all"
+                ? "text-xl font-medium underline underline-offset-4 transition-all md:text-3xl md:underline-offset-8"
+                : "text-xl font-medium underline underline-offset-4 transition-all hover:underline md:text-3xl md:no-underline md:underline-offset-8"
             }
             href={link.href}
             key={link.name}

@@ -20,8 +20,8 @@ export default function MainNavigation({ navLinks }: NavigationProps) {
           <Link
             className={
               isActive
-                ? "underline underline-offset-8 transition-all text-lg md:text-3xl"
-                : "hover:underline underline-offset-8 transition-all text-lg md:text-3xl"
+                ? "text-lg underline underline-offset-8 transition-all md:text-3xl"
+                : "text-lg underline-offset-8 transition-all hover:underline md:text-3xl"
             }
             href={link.href}
             key={link.name}

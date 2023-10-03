@@ -12,7 +12,7 @@ export function Card({ idx, theta, radius }: { idx: number; theta: number; radiu
 
   return (
     <div
-      className={`absolute -translate-x-[50%] -translate-y-[50%] flex flex-col items-center gap-4 justify-between p-3 w-[100px] h-[100px] bg-lightgreen rounded-2xl`}
+      className={`absolute flex h-[100px] w-[100px] -translate-x-[50%] -translate-y-[50%] flex-col items-center justify-between gap-4 rounded-2xl bg-lightgreen p-3`}
       style={{ left: left, top: top }}
     >
       <div className={`h-full w-full rounded-lg text-black`}>{idx}</div>

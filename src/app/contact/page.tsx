@@ -17,17 +17,17 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="flex flex-col gap-2 h-full justify-start">
+    <div className="flex h-full flex-col justify-start gap-2">
       <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">contact</h1>
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-3 md:grid-rows-2 md:gap-y-10 gap-4">
+      <div className="grid grid-cols-1 grid-rows-4 gap-4 md:grid-cols-3 md:grid-rows-2 md:gap-y-10">
         <div
-          className="cursor-pointer hover:outline hover:outline-2 hover:outline-whiteish rounded-md p-2 md:p-4"
+          className="cursor-pointer rounded-md p-2 hover:outline hover:outline-2 hover:outline-whiteish md:p-4"
           onClick={() => copyToClipboard("pdrmenezes1@gmail.com")}
         >
           <h2 className="font-semibold">EMAIL</h2>
           <p>pdrmenezes1@gmail.com</p>
           <div
-            className="fixed left-1/2 bottom-8 bg-whiteish p-4 text-blackish text-center text-sm font-medium min-w-[200px] -ml-[100px] rounded-lg"
+            className="fixed bottom-8 left-1/2 -ml-[100px] min-w-[200px] rounded-lg bg-whiteish p-4 text-center text-sm font-medium text-blackish"
             id="email-toast"
           >
             <span className="mr-1">✅</span> Email copied to clipboard
@@ -37,7 +37,7 @@ export default function ContactPage() {
           href="https://www.github.com/pdrmenezes"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:outline hover:outline-2 hover:outline-whiteish rounded-md p-2 md:p-4"
+          className="rounded-md p-2 hover:outline hover:outline-2 hover:outline-whiteish md:p-4"
         >
           <h2 className="font-semibold">GITHUB</h2>
           <p>/pdrmenezes</p>
@@ -46,12 +46,12 @@ export default function ContactPage() {
           href="https://www.instagram.com/pdrmenezes"
           target="_blank"
           rel="noopener noreferrer"
-          className="md:row-start-2 md:col-start-1 hover:outline hover:outline-2 hover:outline-whiteish rounded-md p-2 md:p-4"
+          className="rounded-md p-2 hover:outline hover:outline-2 hover:outline-whiteish md:col-start-1 md:row-start-2 md:p-4"
         >
           <h2 className="font-semibold">INSTAGRAM</h2>
           <p>@pdrmenezes</p>
         </a>
-        <div className="md:row-start-2 md:col-start-2 p-2 md:p-4">
+        <div className="p-2 md:col-start-2 md:row-start-2 md:p-4">
           <h2 className="font-semibold">_</h2>
           <p>your turn (:</p>
         </div>

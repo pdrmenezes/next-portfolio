@@ -2,17 +2,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-2 h-full justify-center">
+    <div className="flex h-full flex-col justify-center gap-2">
       <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">hi, i’m Pedro,</h1>
       <div className="group">
-        <h2 className="text-[clamp(1.5rem,5vw,3.125rem)] font-medium">
+        <h2 className="text-[clamp(1.2rem,5vw,3.125rem)] font-medium">
           a brazilian{" "}
-          <Link href={"/projects"} className="group-hover:tracking-wide transition-all">
-            <span className="underline underline-offset-8 cursor-pointer">software developer</span>
+          <Link href={"/projects"} className="transition-all group-hover:tracking-wide">
+            <span className="cursor-pointer underline underline-offset-8">software developer</span>
             <span className="cursor-pointer"> ‣</span>
           </Link>{" "}
         </h2>
-        <h2 className="text-[clamp(1.5rem,5vw,3.125rem)] font-medium">currently based in Mexico</h2>
+        <h2 className="text-[clamp(1.2rem,5vw,3.125rem)] font-medium">currently based in Mexico</h2>
       </div>
     </div>
   );

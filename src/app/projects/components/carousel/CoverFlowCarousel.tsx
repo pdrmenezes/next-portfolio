@@ -6,7 +6,7 @@ import PlayingCard from "@/components/PlayingCard/PlayingCard";
 
 export function CoverFlowCarousel() {
   return (
-    <div className="w-full h-full">
+    <div className="h-full w-full">
       <Swiper
         effect={"coverflow"}
         centeredSlides

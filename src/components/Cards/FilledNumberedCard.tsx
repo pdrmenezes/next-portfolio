@@ -16,10 +16,10 @@ export default function FilledNumberedCard({
   tagBorderColor = "border-blackish",
 }: FilledNumberedCardProps) {
   return (
-    <div className={`flex flex-col p-4 gap-x-4 items-center justify-center rounded-xl ${bgColor} w-1/2 ${textColor}`}>
-      <div className="grid grid-cols-2 gap-2 h-full">
+    <div className={`flex  flex-col items-center justify-center gap-x-4 rounded-xl p-4 ${bgColor} w-1/2 ${textColor}`}>
+      <div className="grid h-full grid-cols-2 gap-2">
         <div className="flex flex-col justify-between">
-          <div className={`border ${tagBorderColor} rounded-full w-2/5 text-center`}>{tag}</div>
+          <div className={`border ${tagBorderColor} w-2/5 rounded-full text-center`}>{tag}</div>
           <div className="text-7xl">{number}</div>
         </div>
         <div className="">

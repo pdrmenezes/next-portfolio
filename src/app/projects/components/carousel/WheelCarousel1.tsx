@@ -6,7 +6,7 @@ import PlayingCard from "@/components/PlayingCard/PlayingCard";
 
 export function WheelCarousel1() {
   return (
-    <div className="flex w-full h-full py-6" id="cards-container">
+    <div className="flex h-full w-full py-6" id="cards-container">
       <Swiper
         style={{ margin: "auto auto", width: "100%" }}
         effect={"creative"}

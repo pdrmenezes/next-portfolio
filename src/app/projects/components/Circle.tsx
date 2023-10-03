@@ -31,7 +31,7 @@ export function Circle() {
     <div
       ref={wheelRef}
       onWheel={handleScroll}
-      className={`absolute top-[150%] left-1/2 bg-indigo-400 rounded-full h-[900px] w-[900px] transition-all`}
+      className={`absolute left-1/2 top-[150%] h-[900px] w-[900px] rounded-full bg-indigo-400 transition-all`}
       style={{ transform: "translate(-50%, -100%)" }}
     >
       {options.map((index) => (
