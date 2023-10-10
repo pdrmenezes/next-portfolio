@@ -20,12 +20,10 @@ export default function AreaPage({ params }: Props) {
   const { area } = params;
 
   return (
-    <>
-      <WheelCarouselWrapper
-        projects={
-          area === "front-end" ? projectsData["front-end"] : area === "design" ? projectsData["design"] : area === "35mm" ? projectsData["35mm"] : []
-        }
-      />
-    </>
+    <WheelCarouselWrapper
+      projects={
+        area === "front-end" ? projectsData["front-end"] : area === "design" ? projectsData["design"] : area === "35mm" ? projectsData["35mm"] : []
+      }
+    />
   );
 }
