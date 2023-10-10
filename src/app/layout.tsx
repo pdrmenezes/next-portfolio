@@ -6,10 +6,10 @@ import whiteCircle from "@/assets/icons/white_circle.svg";
 import MainNavigation from "@/components/MainNavigation";
 
 export const metadata = {
-  title: "Início | Pedro Menezes",
+  title: "Home | Pedro Menezes",
   description: "Pedro Menezes' Projects",
-  themeColor: "dark",
 };
+
 const nohemi = localFont({
   src: [
     {

@@ -1,8 +1,8 @@
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { Mousewheel, EffectCreative } from "swiper/modules";
-import PlayingCard from "@/components/PlayingCard/PlayingCard";
 
 export function WheelCarouselWrapper({ projects }: { projects: ReadonlyArray<JSX.Element> }) {
   return (
