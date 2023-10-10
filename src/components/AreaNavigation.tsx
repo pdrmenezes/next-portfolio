@@ -2,14 +2,13 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-type NavigationProps = {
-  navLinks: {
-    name: string;
-    href: string;
-  }[];
-};
+const navLinks = [
+  { name: "front-end", href: "/projects/front-end" },
+  { name: "design", href: "/projects/design" },
+  { name: "35mm", href: "/projects/35mm" },
+];
 
-export default function AreaNavigation({ navLinks }: NavigationProps) {
+export default function AreaNavigation() {
   const pathname = usePathname();
 
   return (

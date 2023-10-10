@@ -2,6 +2,12 @@ import Image from "next/image";
 import { DownArrow } from "@/assets/icons/DownArrow";
 import pedroMenezesPicture from "@/assets/images/about-pedro-menezes.png";
 
+export const metadata = {
+  title: "About | Pedro Menezes",
+  description:
+    "i’m passionate about creatively combining skills to solve problems and drive social and environmental change, especially by empowering people through knowledge and sense of community.",
+};
+
 export default function AboutPage() {
   return (
     <>
