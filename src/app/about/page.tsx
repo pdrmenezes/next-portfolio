@@ -11,7 +11,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="flex h-full flex-col-reverse  justify-center gap-4 md:flex-row md:justify-start">
+      <div className="flex h-full flex-col-reverse justify-center gap-4 md:flex-row md:justify-start">
         <div className="flex w-full flex-col md:w-1/2">
           <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">about</h1>
           {/* <h2 className="text-3xl font-medium">
