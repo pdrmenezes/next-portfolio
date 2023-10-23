@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import { Mousewheel, EffectCoverflow } from "swiper/modules";
-import PlayingCard from "@/components/PlayingCard/PlayingCard";
+import PlayingCard from "@/components/Cards/PlayingCard";
 
 export function CoverFlowCarousel() {
   return (

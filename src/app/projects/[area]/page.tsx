@@ -1,4 +1,4 @@
-import { WheelCarouselWrapper } from "../components/carousel/WheelCarouselWrapper";
+import { WheelCarouselWrapper } from "../../../components/Carousels/WheelCarouselWrapper";
 import { projectsData } from "./projectsData";
 import type { Metadata, ResolvingMetadata } from "next";
 

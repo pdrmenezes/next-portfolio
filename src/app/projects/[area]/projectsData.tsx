@@ -1,4 +1,4 @@
-import PlayingCard from "@/components/PlayingCard/PlayingCard";
+import PlayingCard from "@/components/Cards/PlayingCard";
 
 export const projectsData = {
   "front-end": [
@@ -27,7 +27,7 @@ export const projectsData = {
       tag="front-end"
       mainText="Move your mouse"
       paragraph="and think of an airport"
-      buttonText="try"
+      buttonText="try out"
       url="https://pdrmenezes.github.io/blured-mousetrail-effect-with-animated-text/"
     />,
     <PlayingCard
@@ -108,7 +108,8 @@ export const projectsData = {
       squareColor="bg-[whiteish]"
       tag="35mm"
       mainText="Coming Soon"
-      paragraph="feel free to use them (but pls let me know first)"
+      paragraph="still researching a nice way to display them"
+      // paragraph="feel free to use them (but please hit me up first)"
       buttonText="try out"
     />,
     // <PlayingCard

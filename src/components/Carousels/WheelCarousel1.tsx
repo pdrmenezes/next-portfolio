@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { Mousewheel, EffectCreative } from "swiper/modules";
-import PlayingCard from "@/components/PlayingCard/PlayingCard";
+import PlayingCard from "@/components/Cards/PlayingCard";
 
 export function WheelCarousel1() {
   return (
