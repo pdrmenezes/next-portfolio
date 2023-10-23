@@ -11,7 +11,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="flex h-full flex-col-reverse justify-center gap-4 md:flex-row md:justify-start">
+      <div className="flex h-full flex-col-reverse  justify-center gap-4 md:flex-row md:justify-start">
         <div className="flex w-full flex-col md:w-1/2">
           <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">about</h1>
           {/* <h2 className="text-3xl font-medium">
@@ -26,13 +26,13 @@ export default function AboutPage() {
           <div className="flex gap-4 md:gap-8">
             <a href="https://drive.google.com/file/d/128Y41C1pbz46PeiHa4urs_tOPwP-X7vZ/view?usp=sharing" className="group flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-whiteish group-hover:outline group-hover:outline-2 group-hover:outline-offset-4 group-hover:outline-whiteish">
-                <DownArrow size={24} color="#333333" />
+                <DownArrow className="h-6 w-6 stroke-blackish stroke-2" />
               </div>
               <p className="font-medium group-hover:underline group-hover:underline-offset-4">english cv</p>
             </a>
             <a href="https://drive.google.com/file/d/1jrV_vxCpDdehAUPmI1s48PqWkIGaSx2r/view?usp=sharing" className="group flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-whiteish group-hover:outline group-hover:outline-2 group-hover:outline-offset-4 group-hover:outline-whiteish">
-                <DownArrow size={24} color="#333333" />
+                <DownArrow className="h-6 w-6 stroke-blackish stroke-2" />
               </div>
               <p className="font-medium group-hover:underline group-hover:underline-offset-4">portuguese cv</p>
             </a>

@@ -1,5 +1,5 @@
 "use client";
-import { WheelCarouselWrapper } from "./components/carousel/WheelCarouselWrapper";
+import { WheelCarouselWrapper } from "../../components/Carousels/WheelCarouselWrapper";
 import { projectsData } from "./[area]/projectsData";
 
 export default function ProjectsPage() {
