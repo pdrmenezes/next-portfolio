@@ -10,15 +10,21 @@ const navLinks = [
 
 export default function AreaNavigation() {
   const pathname = usePathname();
-  const isLinkActiveClasslist = `relative group text-xl p-4 w-fit font-medium transition-opacity md:text-3xl`;
-  const isLinkNotActiveClasslist = `relative group text-xl p-4 w-fit opacity-50 font-medium transition-opacity hover:opacity-75 md:text-3xl`;
+
+  const baseLinkClasslist = "group relative w-fit p-2 text-xl font-medium transition-opacity md:p-4 md:text-3xl";
+  const isLinkActiveClasslist = "opacity-100";
+  const isLinkNotActiveClasslist = "opacity-50 hover:opacity-75";
 
   return (
-    <div className="flex gap-4 md:gap-10">
+    <div className="flex gap-2 md:gap-10">
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
         return (
-          <Link className={isActive ? isLinkActiveClasslist : isLinkNotActiveClasslist} href={link.href} key={link.name}>
+          <Link
+            className={isActive ? `${baseLinkClasslist} ${isLinkActiveClasslist}` : `${baseLinkClasslist} ${isLinkNotActiveClasslist}`}
+            href={link.href}
+            key={link.name}
+          >
             {link.name}
             <div
               className={
