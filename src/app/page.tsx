@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { DownArrow } from "@/assets/icons/DownArrow";
 
 export default function Home() {
   return (
