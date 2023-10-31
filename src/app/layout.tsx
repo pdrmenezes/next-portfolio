@@ -4,7 +4,6 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import whiteCircle from "@/assets/icons/white_circle.svg";
 import MainNavigation from "@/components/MainNavigation";
-import { CustomCursor } from "@/components/CustomCursor/CustomCursor";
 
 // export const metadata = {
 //   title: "Home | Pedro Menezes",
@@ -71,7 +70,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={nohemi.className}>
       <body className="flex h-screen flex-col scroll-smooth bg-blackish p-4 text-whiteish antialiased">
-        <CustomCursor />
         <header className="flex flex-col items-center justify-between gap-4 text-center text-white sm:px-6 sm:py-4 md:flex-row lg:flex-row" id="top">
           <Link href="/">
             <Image className="animate-pulse transition-transform md:scale-150" src={whiteCircle} alt="white icon" width={40} height={40} />
