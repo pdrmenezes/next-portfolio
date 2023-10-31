@@ -5,10 +5,10 @@ import localFont from "next/font/local";
 import whiteCircle from "@/assets/icons/white_circle.svg";
 import MainNavigation from "@/components/MainNavigation";
 
-// export const metadata = {
-//   title: "Home | Pedro Menezes",
-//   description: "Pedro Menezes' Projects",
-// };
+export const metadata = {
+  title: "Home | Pedro Menezes",
+  description: "Pedro Menezes' Projects",
+};
 
 const nohemi = localFont({
   src: [
