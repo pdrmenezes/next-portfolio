@@ -24,6 +24,14 @@ export default function AreaNavigation() {
             className={isActive ? `${baseLinkClasslist} ${isLinkActiveClasslist}` : `${baseLinkClasslist} ${isLinkNotActiveClasslist}`}
             href={link.href}
             key={link.name}
+            onMouseEnter={() => {
+              const customCursor = document.getElementById("custom-cursor");
+              customCursor?.classList.remove("sm:visible");
+            }}
+            onMouseLeave={() => {
+              const customCursor = document.getElementById("custom-cursor");
+              customCursor?.classList.add("sm:visible");
+            }}
           >
             {link.name}
             <div
