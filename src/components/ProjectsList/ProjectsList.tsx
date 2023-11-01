@@ -8,7 +8,7 @@ export function ProjectsList() {
       {/* PROJECTS CONTAINER */}
       <div className="divide-y divide-neutral-200" id="projects-accordion-conatiner">
         {/* LIST HEADER */}
-        <div className="mt-8 flex items-center justify-between px-2 py-5">
+        {/* <div className="mt-8 flex items-center justify-between px-2 py-5">
           <div className="grid w-full grid-cols-2 sm:grid-cols-3">
             <h3 className="uppercase">project</h3>
             <h3 className="sr-only uppercase sm:not-sr-only">role(s)</h3>
@@ -29,16 +29,11 @@ export function ProjectsList() {
               <path d="M6 9l6 6 6-6"></path>
             </svg>
           </span>
-        </div>
+        </div> */}
         {/* PROJECT 1 - MEMORY LAKE */}
         <details className="group bg-whiteish bg-opacity-0 px-2 py-5 transition-colors hover:bg-opacity-100 hover:text-blackish open:hover:bg-blackish open:hover:text-whiteish">
-          <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-            <div className="grid w-full grid-cols-2 sm:grid-cols-3">
-              <h4>Memory Lake</h4>
-              <h4 className="sr-only sm:not-sr-only">Conception / Development</h4>
-              <h4>2023</h4>
-            </div>
-            <span className="transition group-open:rotate-180">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium">
+            <span className="-rotate-90 transition group-open:rotate-0">
               <svg
                 fill="none"
                 height="24"
@@ -53,6 +48,11 @@ export function ProjectsList() {
                 <path d="M6 9l6 6 6-6"></path>
               </svg>
             </span>
+            <div className="grid w-full grid-cols-2 sm:grid-cols-3">
+              <h4>Memory Lake</h4>
+              <h4 className="sr-only sm:not-sr-only">Conception / Development</h4>
+              <h4>2023</h4>
+            </div>
           </summary>
           <div className="my-6" id="project-body">
             <div className="flex gap-4">
@@ -78,13 +78,8 @@ export function ProjectsList() {
 
         {/* PROJECT 2 - WORK THROUGH HISTORY */}
         <details className="group bg-whiteish bg-opacity-0 px-2 py-5 transition-colors hover:bg-opacity-100 hover:text-blackish open:hover:bg-blackish open:hover:text-whiteish">
-          <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-            <div className="grid w-full grid-cols-2 sm:grid-cols-3">
-              <h4>Work through history</h4>
-              <h4 className="sr-only sm:not-sr-only">Design / Development</h4>
-              <h4>2023</h4>
-            </div>
-            <span className="transition group-open:rotate-180">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium">
+            <span className="-rotate-90 transition group-open:rotate-0">
               <svg
                 fill="none"
                 height="24"
@@ -99,6 +94,11 @@ export function ProjectsList() {
                 <path d="M6 9l6 6 6-6"></path>
               </svg>
             </span>
+            <div className="grid w-full grid-cols-2 sm:grid-cols-3">
+              <h4>Work through history</h4>
+              <h4 className="sr-only sm:not-sr-only">Design / Development</h4>
+              <h4>2023</h4>
+            </div>
           </summary>
           <div className="mt-3" id="project-body">
             <div className="flex gap-4">
