@@ -48,10 +48,10 @@ export function ProjectsList() {
                 <path d="M6 9l6 6 6-6"></path>
               </svg>
             </span>
-            <div className="grid w-full grid-cols-2 sm:grid-cols-3">
+            <div className="grid w-full grid-cols-[1fr_0.5fr] sm:grid-cols-[1fr_0.5fr_2fr]">
               <h4>Memory Lake</h4>
+              <h4 className="w-fit">2023</h4>
               <h4 className="sr-only sm:not-sr-only">Conception / Development</h4>
-              <h4>2023</h4>
             </div>
           </summary>
           <div className="my-6" id="project-body">
@@ -94,10 +94,10 @@ export function ProjectsList() {
                 <path d="M6 9l6 6 6-6"></path>
               </svg>
             </span>
-            <div className="grid w-full grid-cols-2 sm:grid-cols-3">
+            <div className="grid w-full grid-cols-[1fr_0.5fr] sm:grid-cols-[1fr_0.5fr_2fr]">
               <h4>Work through history</h4>
+              <h4 className="w-fit">2023</h4>
               <h4 className="sr-only sm:not-sr-only">Design / Development</h4>
-              <h4>2023</h4>
             </div>
           </summary>
           <div className="mt-3" id="project-body">
