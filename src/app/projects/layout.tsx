@@ -1,4 +1,5 @@
 import AreaNavigation from "@/components/AreaNavigation";
+import { ProjectsList } from "@/components/ProjectsList/ProjectsList";
 import Link from "next/link";
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
           <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">projects</h1>
         </Link>
         <AreaNavigation />
+        <ProjectsList />
       </div>
       {children}
     </>
