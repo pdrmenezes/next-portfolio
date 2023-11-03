@@ -31,8 +31,8 @@ export function ProjectsList() {
           </span>
         </div> */}
         {/* PROJECT 1 - MEMORY LAKE */}
-        <details className="group bg-whiteish bg-opacity-0 px-2 py-5 transition-colors hover:bg-opacity-100 hover:text-blackish open:hover:bg-blackish open:hover:text-whiteish">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium">
+        <details className="group bg-whiteish bg-opacity-0 transition-colors hover:bg-opacity-100 hover:text-blackish open:hover:bg-blackish open:hover:text-whiteish">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-2 py-10 font-medium">
             <span className="-rotate-90 transition group-open:rotate-0">
               <svg
                 fill="none"
@@ -77,8 +77,8 @@ export function ProjectsList() {
         </details>
 
         {/* PROJECT 2 - WORK THROUGH HISTORY */}
-        <details className="group bg-whiteish bg-opacity-0 px-2 py-5 transition-colors hover:bg-opacity-100 hover:text-blackish open:hover:bg-blackish open:hover:text-whiteish">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium">
+        <details className="group bg-whiteish bg-opacity-0 transition-colors hover:bg-opacity-100 hover:text-blackish open:hover:bg-blackish open:hover:text-whiteish">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-2 py-10 font-medium">
             <span className="-rotate-90 transition group-open:rotate-0">
               <svg
                 fill="none"
