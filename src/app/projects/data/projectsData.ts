@@ -15,7 +15,7 @@ export const projectsData: TProjectData[] = [
     year: "2023",
     areas: ["front-end"],
     roles: ["Creation", "Development"],
-    popoverImageSrc: "memory-lake.png",
+    popoverImageSrc: "memory-lake.webp",
     popoverBgColor: "#0000FF",
     get slug() {
       return this.title.split(" ").join("-");
@@ -26,7 +26,7 @@ export const projectsData: TProjectData[] = [
     year: "2023",
     areas: ["front-end", "design"],
     roles: ["Creation", "Development", "Design"],
-    popoverImageSrc: "work.png",
+    popoverImageSrc: "work.webp",
     popoverBgColor: "khaki",
     get slug() {
       return this.title.split(" ").join("-");
@@ -37,7 +37,7 @@ export const projectsData: TProjectData[] = [
     year: "2023",
     areas: ["front-end"],
     roles: ["Development"],
-    popoverImageSrc: "dhmoney.png",
+    popoverImageSrc: "dhmoney.webp",
     popoverBgColor: "#D7DBE6",
     get slug() {
       return this.title.split(" ").join("-");
@@ -48,7 +48,7 @@ export const projectsData: TProjectData[] = [
     year: "2023",
     areas: ["design"],
     roles: ["Development", "Design"],
-    popoverImageSrc: "movimento-redes.png",
+    popoverImageSrc: "movimento-redes.webp",
     popoverBgColor: "#422969",
     get slug() {
       return this.title.split(" ").join("-");
