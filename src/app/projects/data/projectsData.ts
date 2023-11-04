@@ -44,12 +44,12 @@ export const projectsData: TProjectData[] = [
     },
   },
   {
-    title: "Instituto Redes",
+    title: "Movimento Redes",
     year: "2023",
-    areas: ["front-end", "design"],
+    areas: ["design"],
     roles: ["Development", "Design"],
-    popoverImageSrc: "dhmoney.png",
-    popoverBgColor: "lightgreen",
+    popoverImageSrc: "movimento-redes.png",
+    popoverBgColor: "#422969",
     get slug() {
       return this.title.split(" ").join("-");
     },

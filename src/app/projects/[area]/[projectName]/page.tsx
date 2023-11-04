@@ -6,7 +6,6 @@ type Props = {
 
 export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
   const projectName = params.projectName;
-  const parentTitle = (await parent).title?.absolute || "";
   const parentDescription = (await parent).description || "";
 
   const splittedProjectName = projectName.split("-");

@@ -1,7 +1,6 @@
 "use client";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useCallback } from "react";
 
 const navLinks = [
   { name: "front-end", href: "/projects/front-end" },
@@ -11,17 +10,6 @@ const navLinks = [
 
 export default function AreaNavigation() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  const createQueryString = useCallback(
-    (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams);
-      params.set(name, value);
-
-      return params.toString();
-    },
-    [searchParams],
-  );
 
   const baseLinkClasslist = "group relative w-fit p-2 text-xl font-medium transition-opacity md:p-4 md:text-3xl";
   const isLinkActiveClasslist = "opacity-100";
@@ -34,7 +22,7 @@ export default function AreaNavigation() {
         return (
           <Link
             className={isActive ? `${baseLinkClasslist} ${isLinkActiveClasslist}` : `${baseLinkClasslist} ${isLinkNotActiveClasslist}`}
-            href={`${pathname}?${createQueryString("area", link.name)}`}
+            href={link.href}
             key={link.name}
           >
             {link.name}

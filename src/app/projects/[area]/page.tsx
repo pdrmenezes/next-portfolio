@@ -1,6 +1,6 @@
-import { WheelCarouselWrapper } from "../../../components/Carousels/WheelCarouselWrapper";
-import { projectsData } from "./projectsData";
 import type { Metadata, ResolvingMetadata } from "next";
+import { ProjectsList } from "../components/ProjectsList";
+import { projectsData } from "../data/projectsData";
 
 type Props = {
   params: { area: string };
@@ -18,12 +18,7 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
 }
 export default function AreaPage({ params }: Props) {
   const { area } = params;
+  const filteredProjects = projectsData.filter((project) => project.areas.includes(area));
 
-  return (
-    <WheelCarouselWrapper
-      projects={
-        area === "front-end" ? projectsData["front-end"] : area === "design" ? projectsData["design"] : area === "35mm" ? projectsData["35mm"] : []
-      }
-    />
-  );
+  return <ProjectsList projects={filteredProjects} area={area} />;
 }
