@@ -11,7 +11,7 @@ export function CoverFlowCarousel() {
         effect={"coverflow"}
         centeredSlides
         loop
-        loopedSlides={2}
+        loopAdditionalSlides={2}
         coverflowEffect={{
           slideShadows: false,
           rotate: 5,
