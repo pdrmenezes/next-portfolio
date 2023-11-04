@@ -11,7 +11,7 @@ export function WheelCarousel2() {
         style={{ paddingBlockEnd: "20%" }}
         effect={"creative"}
         loop
-        loopedSlides={2}
+        loopAdditionalSlides={2}
         centeredSlides
         slidesPerView={2}
         breakpoints={{

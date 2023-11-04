@@ -16,7 +16,7 @@ export default function AreaNavigation() {
   const isLinkNotActiveClasslist = "opacity-50 hover:opacity-75";
 
   return (
-    <div className="flex gap-2 md:gap-10">
+    <div className="flex w-fit gap-2 md:gap-10">
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
         return (
