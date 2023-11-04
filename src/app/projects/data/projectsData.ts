@@ -6,6 +6,7 @@ export type TProjectData = {
   popoverImageSrc: string;
   popoverBgColor: string;
   altSlug?: string;
+  externalUrl?: string;
   readonly slug: string;
 };
 
@@ -17,6 +18,7 @@ export const projectsData: TProjectData[] = [
     roles: ["Creation", "Development"],
     popoverImageSrc: "memory-lake.webp",
     popoverBgColor: "#0000FF",
+    externalUrl: "https://www.memorylake.cc",
     get slug() {
       return this.title.split(" ").join("-");
     },
@@ -47,9 +49,10 @@ export const projectsData: TProjectData[] = [
     title: "Movimento Redes",
     year: "2023",
     areas: ["design"],
-    roles: ["Development", "Design"],
+    roles: ["Design"],
     popoverImageSrc: "movimento-redes.webp",
     popoverBgColor: "#422969",
+    externalUrl: "https://www.saudeecosol.org",
     get slug() {
       return this.title.split(" ").join("-");
     },
