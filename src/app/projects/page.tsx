@@ -1,7 +1,6 @@
-"use client";
-import { WheelCarouselWrapper } from "../../components/Carousels/WheelCarouselWrapper";
-import { projectsData } from "./[area]/projectsData";
+import { projectsData } from "./data/projectsData";
+import { ProjectsList } from "@/app/projects/components/ProjectsList";
 
 export default function ProjectsPage() {
-  return <WheelCarouselWrapper projects={[...projectsData["front-end"], ...projectsData["design"], ...projectsData["35mm"]]} />;
+  return <ProjectsList projects={projectsData} />;
 }

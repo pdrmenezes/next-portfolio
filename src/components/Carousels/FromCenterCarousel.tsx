@@ -10,7 +10,7 @@ export function FromCenterCarousel() {
       <Swiper
         effect={"creative"}
         loop
-        loopedSlides={2}
+        loopAdditionalSlides={2}
         centeredSlides
         slidesPerView={2}
         breakpoints={{

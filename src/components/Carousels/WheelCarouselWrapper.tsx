@@ -10,7 +10,7 @@ export function WheelCarouselWrapper({ projects }: { projects: ReadonlyArray<JSX
       style={{ margin: "auto auto", width: "100%" }}
       effect={"creative"}
       loop
-      loopedSlides={2}
+      loopAdditionalSlides={2}
       centeredSlides
       slidesPerView={"auto"}
       breakpoints={{

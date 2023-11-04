@@ -70,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={nohemi.className}>
       <body className="flex h-screen flex-col scroll-smooth bg-blackish p-4 text-whiteish antialiased">
-        <header className="flex flex-col items-center justify-between gap-4 px-6 py-4 text-center text-white md:flex-row lg:flex-row" id="top">
+        <header className="flex flex-col items-center justify-between gap-4 text-center text-white sm:px-6 sm:py-4 md:flex-row lg:flex-row" id="top">
           <Link href="/">
             <Image className="animate-pulse transition-transform md:scale-150" src={whiteCircle} alt="white icon" width={40} height={40} />
           </Link>
