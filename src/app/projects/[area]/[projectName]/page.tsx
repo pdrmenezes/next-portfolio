@@ -53,7 +53,7 @@ export default function ProjectPage({ params }: Props) {
         ))}
       </div>
 
-      <p className="w-full sm:w-1/2">{projectInfo?.content?.description}</p>
+      {projectInfo?.content?.description}
       <div className="grid gap-4 md:grid-cols-3">
         {projectInfo?.content?.contentImagesSrc?.map((imageSrc, index) => (
           <Image src={imageSrc} key={imageSrc} alt={`${projectInfo.title}&apos;s image ${index + 1}`} width={500} height={281} />
