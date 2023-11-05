@@ -29,6 +29,7 @@ export function Project({ projectIndex, project, setProjectPopover, area }: Proj
           ? `/projects/${area}/${project.slug}`
           : `/projects/${project.areas[0]}/${project.slug}`
       }
+      target={project.externalUrlOnly ? "_blank" : "_self"}
     >
       <div className="flex flex-1 flex-col justify-between sm:flex-row">
         <h4 className="transition-transform duration-500 group-hover:-translate-x-4">{project.title}</h4>
@@ -38,7 +39,7 @@ export function Project({ projectIndex, project, setProjectPopover, area }: Proj
         </div>
       </div>
       <span className="not-sr-only sm:sr-only">
-        <DownArrow className="h-4 w-4 -rotate-90 stroke-whiteish stroke-2" />
+        <DownArrow className={`h-4 w-4 ${project.externalUrlOnly ? "-rotate-[135deg]" : "-rotate-90"} stroke-whiteish stroke-2`} />
       </span>
     </Link>
   );
