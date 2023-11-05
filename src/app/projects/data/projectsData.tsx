@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 export type TProjectData = {
   title: string;
   year: string;
@@ -13,7 +15,7 @@ export type TProjectData = {
   readonly slug: string;
   content?: {
     subtitle?: string;
-    description?: string;
+    description?: string | ReactElement;
     contentImagesSrc?: string[];
     tags?: string[];
   };
@@ -36,8 +38,17 @@ export const projectsData: TProjectData[] = [
     },
     content: {
       subtitle: "a platform to save and share memories",
-      description:
-        "In computer science, a data lake is a centralized repository designed to store, process, and secure large amounts of structured, semistructured, and unstructured data. It can store data in its native format and process any variety of it. It means data lakes and our memories share things in common — both data and mementos can emerge depending on the input or moment we live in the present.",
+      description: (
+        <p className="my-3 w-full text-whiteish sm:w-1/2">
+          Memory Lake was created in collaboration with incredibly talented brazilian Artist,{" "}
+          <a href="https://laurapapa.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer underline hover:font-bold">
+            Laura Papa
+          </a>
+          . It aims to provide people with just the necessary tools to share select memories with their loved ones. Not some AI-generated-non-intimate
+          collage.
+        </p>
+      ),
+      // "In computer science, a data lake is a centralized repository designed to store, process, and secure large amounts of structured, semistructured, and unstructured data. It can store data in its native format and process any variety of it. It means data lakes and our memories share things in common — both data and mementos can emerge depending on the input or moment we live in the present.",
       contentImagesSrc: ["/projects/images/memory-lake.webp", "/projects/images/memory-lake.webp", "/projects/images/memory-lake.webp"],
       tags: ["nextjs", "react", "figma"],
     },
