@@ -66,7 +66,7 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
             style={{ backgroundColor: `${project.popoverBgColor}` }}
             className="flex h-full w-full items-center justify-center"
           >
-            <Image src={`/images/${project.popoverImageSrc}`} alt={project.title} width={280} height={0} style={{ height: "auto" }} />
+            <Image src={`/projects/images/${project.popoverImageSrc}`} alt={project.title} width={280} height={0} style={{ height: "auto" }} />
           </div>
         ))}
       </div>

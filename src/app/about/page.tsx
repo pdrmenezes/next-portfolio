@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { DownArrow } from "@/assets/icons/DownArrow";
-import pedroMenezesPicture from "@/assets/images/about-pedro-menezes.png";
+import pedroMenezesPicture from "@/assets/images/about-pedro-menezes.webp";
 
 export const metadata = {
   title: "About | Pedro Menezes",
