@@ -22,6 +22,8 @@ export default function AboutPage() {
             <a
               href="https://drive.google.com/file/d/128Y41C1pbz46PeiHa4urs_tOPwP-X7vZ/view?usp=sharing"
               className="group relative flex items-center gap-3 p-2 sm:p-4"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-whiteish">
                 <DownArrow className="h-6 w-6 stroke-blackish stroke-2" />
@@ -37,6 +39,8 @@ export default function AboutPage() {
             <a
               href="https://drive.google.com/file/d/1jrV_vxCpDdehAUPmI1s48PqWkIGaSx2r/view?usp=sharing"
               className="group relative flex items-center gap-3 p-2 sm:p-4"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-whiteish">
                 <DownArrow className="h-6 w-6 stroke-blackish stroke-2" />
