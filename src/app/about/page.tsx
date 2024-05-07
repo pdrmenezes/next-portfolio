@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { DownArrow } from "@/assets/icons/DownArrow";
 import pedroMenezesPicture from "@/assets/images/about-pedro-menezes.webp";
+import { Curriculum } from "@/components/curriculum";
 
 export const metadata = {
   title: "About | Pedro Menezes",
@@ -11,10 +12,10 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="flex h-full flex-col-reverse justify-center gap-4 md:flex-row md:justify-start">
+      <div className="mb-4 flex flex-col-reverse justify-center gap-4 md:mb-8 md:flex-row md:justify-start">
         <div className="flex w-full flex-col md:w-1/2">
           <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">about</h1>
-          <p className="text-md mb-10 font-medium md:text-xl">
+          <p className="mb-10 font-medium md:text-xl">
             i’m passionate about creatively combining skills to solve problems and drive social and environmental change, especially by empowering
             people through knowledge and sense of community.
           </p>
@@ -59,6 +60,7 @@ export default function AboutPage() {
           <Image src={pedroMenezesPicture} alt="Pedro's profile picture" style={{ maxWidth: "100%", height: "auto" }} width={392} height={441} />
         </div>
       </div>
+      <Curriculum />
     </>
   );
 }

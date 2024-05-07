@@ -3,7 +3,6 @@ import { ReactElement } from "react";
 export type TProjectData = {
   title: string;
   year: string;
-  areas: string[];
   roles: string[];
   popoverImageSrc: string;
   popoverBgColor: string;
@@ -25,7 +24,6 @@ export const projectsData: TProjectData[] = [
   {
     title: "Memory Lake",
     year: "2023",
-    areas: ["front-end"],
     roles: ["Creation", "Development"],
     popoverImageSrc: "memory-lake.webp",
     popoverBgColor: "#0000FF",
@@ -34,14 +32,19 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: true,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
     content: {
       subtitle: "a platform to save and share memories",
       description: (
-        <p className="my-3 w-full text-whiteish sm:w-1/2">
+        <p className="my-3 w-full text-whiteish">
           Memory Lake was created in collaboration with incredibly talented brazilian Artist,{" "}
-          <a href="https://laurapapa.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer underline hover:font-bold">
+          <a
+            href="https://laurapapa.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer underline transition-all duration-75 hover:font-bold"
+          >
             Laura Papa
           </a>
           . It aims to provide people with just the necessary tools to share select memories with their loved ones. Not some AI-generated-non-intimate
@@ -53,24 +56,22 @@ export const projectsData: TProjectData[] = [
       tags: ["nextjs", "react", "figma"],
     },
   },
-  {
-    title: "Work In The Last Decade",
-    year: "2023",
-    areas: ["front-end", "design"],
-    roles: ["Creation", "Design", "Development"],
-    popoverImageSrc: "work.webp",
-    popoverBgColor: "khaki",
-    externalUrlOnly: false,
-    published: false,
-    featured: true,
-    get slug() {
-      return this.title.split(" ").join("-");
-    },
-  },
+  // {
+  //   title: "Work In The Last Decade",
+  //   year: "2023",
+  //   roles: ["Creation", "Design", "Development"],
+  //   popoverImageSrc: "work.webp",
+  //   popoverBgColor: "khaki",
+  //   externalUrlOnly: false,
+  //   published: false,
+  //   featured: true,
+  //   get slug() {
+  //     return this.title.toLowerCase().split(" ").join("-");
+  //   },
+  // },
   {
     title: "Digital Money House",
     year: "2023",
-    areas: ["front-end"],
     roles: ["Development"],
     popoverImageSrc: "dh-money-house.webp",
     popoverBgColor: "#C1FD35",
@@ -79,10 +80,10 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: true,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
     content: {
-      subtitle: "digital house's final project",
+      subtitle: "digital house's capstone project",
       description: "A Digital Wallet so you never have to worry about carrying money again.",
       contentImagesSrc: ["/projects/images/dh-money-house.webp", "/projects/images/dh-money-house.webp", "/projects/images/dh-money-house.webp"],
       tags: ["nextjs", "react", "figma", "chakra ui"],
@@ -91,7 +92,6 @@ export const projectsData: TProjectData[] = [
   {
     title: "Movimento Redes",
     year: "2023",
-    areas: ["design"],
     roles: ["Design"],
     popoverImageSrc: "movimento-redes.webp",
     popoverBgColor: "#422969",
@@ -100,7 +100,7 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: true,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
     content: {
       subtitle: "NGO's website revamp",
@@ -113,7 +113,6 @@ export const projectsData: TProjectData[] = [
   {
     title: "Break Out?",
     year: "2023",
-    areas: ["front-end, design"],
     roles: ["Design", "Copy", "Development"],
     popoverImageSrc: "break-out.webp",
     popoverBgColor: "#F0F0F0",
@@ -122,14 +121,13 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: false,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
   },
   {
     title: "Airport Flip Board",
     year: "2022",
-    areas: ["front-end, design"],
-    roles: ["Design, Development"],
+    roles: ["Design", "Development"],
     popoverImageSrc: "airport-flip-board.webp",
     popoverBgColor: "#70cc84",
     externalUrlOnly: true,
@@ -137,13 +135,12 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: false,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
   },
   {
     title: "Interactive Mouse Cursor",
     year: "2022",
-    areas: ["front-end"],
     roles: ["Development"],
     popoverImageSrc: "interactive-mouse-cursror.webp",
     popoverBgColor: "#F0F0F0",
@@ -152,13 +149,12 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: false,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
   },
   {
     title: "Wordle-like",
     year: "2022",
-    areas: ["front-end"],
     roles: ["Development"],
     popoverImageSrc: "wordle-like.webp",
     popoverBgColor: "tomato",
@@ -167,7 +163,7 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: false,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
   },
 
@@ -175,7 +171,6 @@ export const projectsData: TProjectData[] = [
     title: "Google's Dino Demo",
     // Best Chrome feature
     year: "2022",
-    areas: ["front-end"],
     roles: ["Development"],
     popoverImageSrc: "google-dino.webp",
     popoverBgColor: "#545454",
@@ -184,28 +179,25 @@ export const projectsData: TProjectData[] = [
     published: true,
     featured: false,
     get slug() {
-      return this.title.split(" ").join("-");
+      return this.title.toLowerCase().split(" ").join("-");
     },
   },
-  // {
-  //   title: "Iluminated Card Corners",
-  //   // thinking about a social project where we iluminate people's dangerous walks home
-  //   year: "2022",
-  //   areas: ["front-end"],
-  //   roles: ["Development"],
-  //   popoverImageSrc: "iluminated-corners.webp",
-  //   popoverBgColor: "#F5F5F5",
-  //   externalUrl: "https://pdrmenezes.github.io/CSS_JS_lit-up-cards-with-css-and-js/",
-  //   published: true,
-  //   featured: false,
-  //   get slug() {
-  //     return this.title.split(" ").join("-");
-  //   },
-  // },
+  {
+    title: "Iluminated Card Corners",
+    // thinking about a social project where we iluminate people's dangerous walks home
+    year: "2022",
+    externalUrlOnly: true,
+    roles: ["Development"],
+    popoverImageSrc: "iluminated-corners.webp",
+    popoverBgColor: "#F5F5F5",
+    externalUrl: "https://pdrmenezes.github.io/CSS_JS_lit-up-cards-with-css-and-js/",
+    published: true,
+    featured: false,
+    get slug() {
+      return this.title.toLowerCase().split(" ").join("-");
+    },
+  },
 ];
 
 // This very website
 // figma | fonts | colors | techs
-
-// 35mm
-// still researching a nice way to display them

@@ -1,5 +1,5 @@
 import type { Metadata, ResolvingMetadata } from "next";
-import { projectsData } from "../../data/projectsData";
+import { projectsData } from "@/data/projectsData";
 import Image from "next/image";
 import { DownArrow } from "@/assets/icons/DownArrow";
 import Link from "next/link";
@@ -21,14 +21,10 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     description: parentDescription,
   };
 }
+
 export default function ProjectPage({ params }: Props) {
   const { projectName } = params;
-
   const projectInfo = projectsData.find((project) => project.slug == projectName);
-  const formattedProjectName = projectName
-    .split("-")
-    .map((word) => word[0].toLocaleUpperCase() + word.substring(1))
-    .join(" ");
 
   return (
     <div className="flex flex-col gap-4">
@@ -36,12 +32,11 @@ export default function ProjectPage({ params }: Props) {
         <h3 className="text-3xl">
           {projectInfo?.title} / {projectInfo?.year}{" "}
           {projectInfo?.externalUrl && (
-            <Link href={projectInfo?.externalUrl} className="ml-2 inline-flex">
-              <DownArrow className="h-8 w-8 translate-y-1 -rotate-[135deg] stroke-whiteish stroke-2 group-hover:underline group-hover:underline-offset-4" />
+            <Link href={projectInfo?.externalUrl} className="ml-2 inline-flex transition-transform hover:-translate-y-0.5 hover:translate-x-0.5">
+              <DownArrow className="h-8 w-8 translate-y-1 -rotate-[135deg] stroke-whiteish stroke-2" />
             </Link>
           )}
         </h3>
-
         <h4 className="text-sm">{projectInfo?.content?.subtitle}</h4>
       </div>
 
@@ -54,9 +49,10 @@ export default function ProjectPage({ params }: Props) {
       </div>
 
       {projectInfo?.content?.description}
+
       <div className="grid gap-4 md:grid-cols-3">
         {projectInfo?.content?.contentImagesSrc?.map((imageSrc, index) => (
-          <Image src={imageSrc} key={imageSrc} alt={`${projectInfo.title}&apos;s image ${index + 1}`} width={500} height={281} />
+          <Image src={imageSrc} key={`${imageSrc + index}`} alt={`${projectInfo.title}&apos;s image ${index + 1}`} width={500} height={281} />
         ))}
       </div>
     </div>

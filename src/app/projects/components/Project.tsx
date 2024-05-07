@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { TProjectData } from "../data/projectsData";
+import { TProjectData } from "@/data/projectsData";
 import Link from "next/link";
 import { DownArrow } from "@/assets/icons/DownArrow";
 
@@ -7,10 +7,9 @@ interface ProjectProps {
   projectIndex: number;
   project: TProjectData;
   setProjectPopover: Dispatch<SetStateAction<{ isActive: boolean; projectIndex: number }>>;
-  area: string | undefined;
 }
 
-export function Project({ projectIndex, project, setProjectPopover, area }: ProjectProps) {
+export function Project({ projectIndex, project, setProjectPopover }: ProjectProps) {
   const formattedRoles = project.roles.length > 1 ? project.roles.join(" / ") : project.roles[0];
 
   return (
@@ -20,15 +19,7 @@ export function Project({ projectIndex, project, setProjectPopover, area }: Proj
       } ${!project.published ? "cursor-default" : ""}`}
       onMouseEnter={() => setProjectPopover({ isActive: true, projectIndex: projectIndex })}
       onMouseLeave={() => setProjectPopover({ isActive: false, projectIndex: projectIndex })}
-      href={
-        !project.published
-          ? ""
-          : project.externalUrlOnly
-          ? project.externalUrl!
-          : area
-          ? `/projects/${area}/${project.slug}`
-          : `/projects/${project.areas[0]}/${project.slug}`
-      }
+      href={!project.published ? "" : project.externalUrlOnly ? project.externalUrl! : `/projects/${project.slug}`}
       target={project.externalUrlOnly ? "_blank" : "_self"}
     >
       <div className="flex flex-1 flex-col justify-between sm:flex-row">
