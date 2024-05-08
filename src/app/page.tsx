@@ -12,7 +12,7 @@ export default function Home() {
             <span className="cursor-pointer"> ‣</span>
           </Link>{" "}
         </h2>
-        <h2 className="text-[clamp(1.2rem,5vw,3.125rem)] font-medium">currently based in Mexico</h2>
+        <h2 className="text-[clamp(1.2rem,5vw,3.125rem)] font-medium">currently based in Brasília</h2>
       </div>
     </div>
   );
