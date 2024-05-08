@@ -12,7 +12,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="mb-4 flex flex-col-reverse justify-center gap-4 md:mb-8 md:flex-row md:justify-start">
+      <div className="mb-8 flex flex-col-reverse justify-center gap-4 md:flex-row md:justify-start">
         <div className="flex w-full flex-col md:w-1/2">
           <h1 className="text-[clamp(3rem,9vw,6rem)] font-bold">about</h1>
           <p className="mb-10 font-medium md:text-xl">
