@@ -1,7 +1,7 @@
 export function Curriculum() {
   return (
     <>
-      <h3 className="mb-4 text-xl font-semibold uppercase">experiences</h3>
+      <h3 className="mb-4 text-[clamp(1.5rem,7vw,3rem)] font-semibold">experiences</h3>
       <div className="divide-y divide-neutral-200" id="projects-accordion-container">
         {/* LIST HEADER */}
         <div className="flex items-center justify-between gap-4 px-2 py-5">
