@@ -52,7 +52,7 @@ export function Curriculum() {
             </div>
           </summary>
           <div className="my-6" id="project-body">
-            <div className="my-3 px-4 text-sm leading-loose md:leading-relaxed">
+            <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
               <p className="font-medium">Medcel | Afya</p>
               <br />
               <p>
@@ -107,7 +107,7 @@ export function Curriculum() {
             </div>
           </summary>
           <div className="my-6" id="project-body">
-            <div className="my-3 px-4 text-sm leading-loose md:leading-relaxed">
+            <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
               <p>
                 As a front-end developer and designer I dedicate myself to empowering non-governmental organizations (NGOs) to effectively communicate
                 their mission, connect with their audience, and drive positive social impact. In this role I:
@@ -161,7 +161,7 @@ export function Curriculum() {
             </div>
           </summary>
           <div className="my-6" id="project-body">
-            <div className="my-3 px-4 text-sm leading-loose md:leading-relaxed">
+            <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
               <p>
                 Meridianos dedicated itself to strengthening brands through comprehensive branding strategies, social media content creation, website
                 development, while also serving as a creative content hub producing compelling multimedia content.
@@ -209,7 +209,7 @@ export function Curriculum() {
             </div>
           </summary>
           <div className="my-6" id="project-body">
-            <div className="my-3 px-4 text-sm leading-loose md:leading-relaxed">
+            <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
               <p>As a full-time marketing associate at the 3rd biggest alliance française in brazil I:</p>
               <br />
               <div className="pl-4">

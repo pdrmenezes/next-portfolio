@@ -48,7 +48,7 @@ export default function ProjectPage({ params }: Props) {
         ))}
       </div>
 
-      {projectInfo?.content?.description}
+      <section className="max-w-prose text-balance">{projectInfo?.content?.description}</section>
 
       <div className="grid gap-4 md:grid-cols-3">
         {projectInfo?.content?.contentImagesSrc?.map((imageSrc, index) => (
