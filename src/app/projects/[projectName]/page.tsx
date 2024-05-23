@@ -40,7 +40,7 @@ export default function ProjectPage({ params }: Props) {
         <h4 className="text-sm">{projectInfo?.content?.subtitle}</h4>
       </div>
 
-      <div className="flex gap-4 border-t border-t-whiteish pt-5">
+      <div className="flex flex-wrap gap-4 border-t border-t-whiteish pt-5">
         {projectInfo?.content?.tags?.map((tag) => (
           <p key={tag} className="rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">
             {tag}

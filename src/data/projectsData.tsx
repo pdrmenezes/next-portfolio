@@ -53,7 +53,7 @@ export const projectsData: TProjectData[] = [
       ),
       // "In computer science, a data lake is a centralized repository designed to store, process, and secure large amounts of structured, semistructured, and unstructured data. It can store data in its native format and process any variety of it. It means data lakes and our memories share things in common — both data and mementos can emerge depending on the input or moment we live in the present.",
       contentImagesSrc: ["/projects/images/memory-lake.webp", "/projects/images/memory-lake.webp", "/projects/images/memory-lake.webp"],
-      tags: ["nextjs", "react", "figma"],
+      tags: ["nextjs", "react", "typescript", "postgresql", "tailwind", "drizzle"],
     },
   },
   // {
@@ -86,7 +86,7 @@ export const projectsData: TProjectData[] = [
       subtitle: "digital house's capstone project",
       description: "A Digital Wallet so you never have to worry about carrying money again.",
       contentImagesSrc: ["/projects/images/dh-money-house.webp", "/projects/images/dh-money-house.webp", "/projects/images/dh-money-house.webp"],
-      tags: ["nextjs", "react", "figma", "chakra ui"],
+      tags: ["nextjs", "react", "typescript", "chakra ui", "figma"],
     },
   },
   {
@@ -107,7 +107,7 @@ export const projectsData: TProjectData[] = [
       description:
         "Movimento Redes is an NGO that helps minorities get in the job market while also providing mental health support and developing cultural and educational activities",
       contentImagesSrc: ["/projects/images/movimento-redes.webp", "/projects/images/movimento-redes.webp", "/projects/images/movimento-redes.webp"],
-      tags: ["figma", "material ui"],
+      tags: ["material ui", "figma"],
     },
   },
   {
