@@ -53,6 +53,15 @@ export function Curriculum() {
           </summary>
           <div className="my-6" id="project-body">
             <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
+              <div className="my-5 flex flex-wrap gap-2">
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">React</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Redux</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Typescript</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Material UI</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Styled Components</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">REST APIs</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">MongoDB</p>
+              </div>
               <p className="font-medium">Medcel | Afya</p>
               <br />
               <p>
@@ -108,6 +117,14 @@ export function Curriculum() {
           </summary>
           <div className="my-6" id="project-body">
             <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
+              <div className="my-5 flex flex-wrap gap-2">
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Next.js</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">React</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Typescript</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Tailwind CSS</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">REST APIs</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Figma</p>
+              </div>
               <p>
                 As a front-end developer and designer I dedicate myself to empowering non-governmental organizations (NGOs) to effectively communicate
                 their mission, connect with their audience, and drive positive social impact. In this role I:
@@ -210,6 +227,12 @@ export function Curriculum() {
           </summary>
           <div className="my-6" id="project-body">
             <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
+              <div className="my-5 flex flex-wrap gap-2">
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">HTML</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">CSS</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">Javascript</p>
+                <p className="w-fit whitespace-nowrap rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">PHP</p>
+              </div>
               <p>As a full-time marketing associate at the 3rd biggest alliance française in brazil I:</p>
               <br />
               <div className="pl-4">
