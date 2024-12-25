@@ -6,7 +6,7 @@
 
 - <strong>It was first built with HTML and CSS (no JS).</strong>
 
-- <strong>Now it's built with Next.js (w/ Typescript) + TailwindCSS + Framer Motion for the project animations.</strong>
+- <strong>Now it's built with Next.js (w/ Typescript) + TailwindCSS + Motion (formerly Framer Motion) for the project animations.</strong>
 
 - <strong>The entire website uses the Nohemi Font, created by [Rajesh Rajput](https://www.behance.net/rajputrajesh) who designs incredible typefaces.</strong>
 
