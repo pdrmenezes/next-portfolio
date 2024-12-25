@@ -30,13 +30,13 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
         ease: [0.76, 0, 0.24, 1],
         top: {
           type: "spring",
-          damping: 20,
+          damping: 15,
           mass: 0.1,
           stiffness: 100,
         },
         left: {
           type: "spring",
-          damping: 20,
+          damping: 15,
           mass: 0.1,
           stiffness: 100,
         },
