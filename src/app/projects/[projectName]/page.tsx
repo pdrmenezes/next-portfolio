@@ -5,10 +5,11 @@ import { DownArrow } from "@/assets/icons/DownArrow";
 import Link from "next/link";
 
 type Props = {
-  params: { projectName: string };
+  params: Promise<{ projectName: string }>;
 };
 
-export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata(props: Props, parent: ResolvingMetadata): Promise<Metadata> {
+  const params = await props.params;
   const projectName = params.projectName;
   const parentDescription = (await parent).description || "";
 
@@ -22,7 +23,8 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   };
 }
 
-export default function ProjectPage({ params }: Props) {
+export default async function ProjectPage(props: Props) {
+  const params = await props.params;
   const { projectName } = params;
   const projectInfo = projectsData.find((project) => project.slug == projectName);
 
