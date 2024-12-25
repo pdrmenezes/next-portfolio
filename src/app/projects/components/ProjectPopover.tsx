@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { TProjectData } from "@/data/projectsData";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 interface ProjectPopoverProps {
   projectPopover: {
