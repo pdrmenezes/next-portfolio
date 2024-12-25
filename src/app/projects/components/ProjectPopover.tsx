@@ -59,7 +59,7 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
         // transition from: https://easings.net/
         style={{ top: `${-100 * projectIndex}%`, transition: "top 0.5s cubic-bezier(0.76, 0, 0.24, 1)" }}
       >
-        {projectsData.map((project, index) => (
+        {projectsData.map((project) => (
           <div
             id="popover"
             key={project.title}

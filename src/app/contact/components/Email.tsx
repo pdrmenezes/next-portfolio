@@ -10,7 +10,7 @@ export function Email() {
         toastDiv!.classList.remove("show");
       }, 3000);
     } catch (err) {
-      console.log("Failed to copy Email.");
+      console.log("Failed to copy Email.", err);
     }
   }
   return (
