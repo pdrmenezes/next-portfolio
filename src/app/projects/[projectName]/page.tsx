@@ -50,7 +50,7 @@ export default async function ProjectPage(props: Props) {
         ))}
       </div>
 
-      <section className="max-w-prose text-balance">{projectInfo?.content?.description}</section>
+      <section className="max-w-prose space-y-6 text-balance">{projectInfo?.content?.description}</section>
 
       <div className="grid gap-4 md:grid-cols-3">
         {projectInfo?.content?.contentImagesSrc?.map((imageSrc, index) => (
