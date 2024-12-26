@@ -35,6 +35,50 @@ export const CURRICULUM_DATA = [
     ),
   },
   {
+    company: "Tech Pro Bem (volunteer)",
+    roles: ["front-end developer"],
+    time: "aug 2024 - present",
+    mainSkills: ["Next.js", "React", "Typescript", "CMS"],
+    description: (
+      <>
+        <p>As a volunteer front-end developer at Tech Pro bem I am responsible for:</p>
+        <br />
+        <div className="pl-4">
+          <li>
+            Building web platforms for non-profit organizations using mainly <span className="font-semibold">Next.js, React</span> and{" "}
+            <span className="font-semibold">Typescript</span>.
+          </li>
+          <li>
+            Creating responsive interfaces with <span className="font-semibold">CSS modules</span>.
+          </li>
+          <li>Developing and maintaining RESTful API integrations.</li>
+          <li>Performing code reviews.</li>
+          <li>Participating in technical decisions in collaboration with the Product and Design teams.</li>
+        </div>
+      </>
+    ),
+  },
+  {
+    company: "Oportunidades (volunteer)",
+    roles: ["front-end developer"],
+    time: "jun 2024 - present",
+    mainSkills: ["Next.js", "React", "Typescript", "CMS"],
+    description: (
+      <>
+        <p>
+          In Mozambique, students face a significant information gap regarding educational opportunities. The scarcity of updated information about
+          scholarships and exchange programs on government websites keeps students from making informed decisions about courses, institutions, and
+          scholarships, limiting their educational and professional potential.
+        </p>
+        <br/>
+        <p>
+          Oportunidades' goal is to be a comprehensive online platform that aggregates information on Mozambican universities nationwide. The platform
+          will bridge the information gap, providing detailed insights into courses, admission requirements, and deadlines across all provinces.
+        </p>
+      </>
+    ),
+  },
+  {
     company: "Tiziu Technology (contractor)",
     roles: ["front-end developer", "ui designer"],
     time: "aug 2022 - present",
