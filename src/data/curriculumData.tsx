@@ -72,7 +72,7 @@ export const CURRICULUM_DATA = [
         </p>
         <br/>
         <p>
-          Oportunidades' goal is to be a comprehensive online platform that aggregates information on Mozambican universities nationwide. The platform
+          Oportunidades&apos; goal is to be a comprehensive online platform that aggregates information on Mozambican universities nationwide. The platform
           will bridge the information gap, providing detailed insights into courses, admission requirements, and deadlines across all provinces.
         </p>
       </>

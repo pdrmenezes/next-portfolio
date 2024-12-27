@@ -45,7 +45,7 @@ export const projectsData: TProjectData[] = [
           </p>
           <p>
             In this role, I collaborated with Product and Design teams to develop a platform built with Next.js and Contentful - a CMS (Content
-            Management System) to streamline assets management by ABRE's team - that aligned with ABRE's mission of creating a more inclusive society.
+            Management System) to streamline assets management by ABRE&apos;s team - that aligned with ABRE&apos;s mission of creating a more inclusive society.
           </p>
         </>
       ),
