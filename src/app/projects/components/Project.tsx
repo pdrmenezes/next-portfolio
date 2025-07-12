@@ -23,14 +23,14 @@ export function Project({ projectIndex, project, setProjectPopover }: ProjectPro
       target={project.externalUrlOnly ? "_blank" : "_self"}
     >
       <div className="flex flex-1 flex-col justify-between sm:flex-row">
-        <h4 className="transition-transform duration-500 group-hover:-translate-x-4">{project.title}</h4>
-        <div className="flex items-center gap-4 transition-transform duration-500 group-hover:translate-x-4 sm:justify-center sm:gap-10">
+        <h4 className="transition-transform duration-500 group-hover:translate-x-2 sm:group-hover:-translate-x-4">{project.title}</h4>
+        <div className="flex items-center gap-4 transition-transform duration-500 group-hover:translate-x-2 sm:group-hover:translate-x-4 sm:justify-center sm:gap-10">
           <h4 className="text-xs text-neutral-400 sm:text-base sm:text-whiteish">{formattedRoles}</h4>
           <h4 className="sr-only sm:not-sr-only">{project.year}</h4>
         </div>
       </div>
       <span className="not-sr-only sm:sr-only">
-        <DownArrow className={`h-4 w-4 ${project.externalUrlOnly ? "-rotate-[135deg]" : "-rotate-90"} stroke-whiteish stroke-2`} />
+        <DownArrow className={`size-4 ${project.externalUrlOnly ? "-rotate-[135deg]" : "-rotate-90"} stroke-whiteish stroke-2`} />
       </span>
     </Link>
   );

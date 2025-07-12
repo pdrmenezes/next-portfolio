@@ -1,5 +1,5 @@
 import type { Metadata, ResolvingMetadata } from "next";
-import { projectsData } from "@/data/projectsData";
+import { PROJECTS_DATA } from "@/data/projectsData";
 import Image from "next/image";
 import { DownArrow } from "@/assets/icons/DownArrow";
 import Link from "next/link";
@@ -26,23 +26,23 @@ export async function generateMetadata(props: Props, parent: ResolvingMetadata):
 export default async function ProjectPage(props: Props) {
   const params = await props.params;
   const { projectName } = params;
-  const projectInfo = projectsData.find((project) => project.slug == projectName);
+  const projectInfo = PROJECTS_DATA.find((project) => project.slug == projectName);
 
   return (
-    <div className="flex flex-col gap-4">
-      <div>
-        <h3 className="text-3xl">
+    <div className="flex flex-col gap-8">
+      <div className="border-b border-b-whiteish pb-5">
+        <h3 className="text-2xl sm:text-3xl">
           {projectInfo?.title} / {projectInfo?.year}{" "}
           {projectInfo?.externalUrl && (
             <Link href={projectInfo?.externalUrl} className="ml-2 inline-flex transition-transform hover:-translate-y-0.5 hover:translate-x-0.5">
-              <DownArrow className="h-8 w-8 translate-y-1 -rotate-[135deg] stroke-whiteish stroke-2" />
+              <DownArrow className="size-6 translate-y-1 -rotate-[135deg] stroke-whiteish stroke-2 sm:size-8" />
             </Link>
           )}
         </h3>
         <h4 className="text-sm">{projectInfo?.content?.subtitle}</h4>
       </div>
 
-      <div className="flex flex-wrap gap-4 border-t border-t-whiteish pt-5">
+      <div className="flex flex-wrap gap-4">
         {projectInfo?.content?.tags?.map((tag) => (
           <p key={tag} className="rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">
             {tag}
@@ -50,7 +50,7 @@ export default async function ProjectPage(props: Props) {
         ))}
       </div>
 
-      <section className="max-w-prose space-y-6 text-balance">{projectInfo?.content?.description}</section>
+      <section className="space-y-6 text-pretty text-sm sm:text-base">{projectInfo?.content?.description}</section>
 
       <div className="grid gap-4 md:grid-cols-3">
         {projectInfo?.content?.contentImagesSrc?.map((imageSrc, index) => (

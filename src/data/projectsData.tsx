@@ -20,7 +20,7 @@ export type TProjectData = {
   };
 };
 
-export const projectsData: TProjectData[] = [
+export const PROJECTS_DATA: TProjectData[] = [
   {
     title: "ABRE",
     year: "2024",
@@ -45,7 +45,8 @@ export const projectsData: TProjectData[] = [
           </p>
           <p>
             In this role, I collaborated with Product and Design teams to develop a platform built with Next.js and Contentful - a CMS (Content
-            Management System) to streamline assets management by ABRE&apos;s team - that aligned with ABRE&apos;s mission of creating a more inclusive society.
+            Management System) to streamline assets management by ABRE&apos;s team - that aligned with ABRE&apos;s mission of creating a more
+            inclusive society.
           </p>
         </>
       ),
@@ -88,39 +89,7 @@ export const projectsData: TProjectData[] = [
       tags: ["next.js", "react", "typescript", "postgresql", "tailwind", "drizzle"],
     },
   },
-  // {
-  //   title: "Work In The Last Decade",
-  //   year: "2023",
-  //   roles: ["Creation", "Design", "Development"],
-  //   popoverImageSrc: "work.webp",
-  //   popoverBgColor: "khaki",
-  //   externalUrlOnly: false,
-  //   published: false,
-  //   featured: true,
-  //   get slug() {
-  //     return this.title.toLowerCase().split(" ").join("-");
-  //   },
-  // },
-  // {
-  //   title: "Digital Money House",
-  //   year: "2023",
-  //   roles: ["Development"],
-  //   popoverImageSrc: "dh-money-house.webp",
-  //   popoverBgColor: "#C1FD35",
-  //   externalUrlOnly: false,
-  //   externalUrl: "https://github.com/ThiagoMaurat/dh-money",
-  //   published: true,
-  //   featured: true,
-  //   get slug() {
-  //     return this.title.toLowerCase().split(" ").join("-");
-  //   },
-  //   content: {
-  //     subtitle: "digital house's capstone project",
-  //     description: "A Digital Wallet so you never have to worry about carrying money again.",
-  //     contentImagesSrc: ["/projects/images/dh-money-house.webp", "/projects/images/dh-money-house.webp", "/projects/images/dh-money-house.webp"],
-  //     tags: ["next.js", "react", "typescript", "chakra ui", "figma"],
-  //   },
-  // },
+
   {
     title: "Movimento Redes",
     year: "2023",
@@ -155,80 +124,7 @@ export const projectsData: TProjectData[] = [
     externalUrlOnly: true,
     externalUrl: "https://pdrmenezes.github.io/scroll_animation-with-gsap/",
     published: true,
-    featured: false,
-    get slug() {
-      return this.title.toLowerCase().split(" ").join("-");
-    },
-  },
-  {
-    title: "Airport Flip Board",
-    year: "2022",
-    roles: ["Design", "Development"],
-    popoverImageSrc: "airport-flip-board.webp",
-    popoverBgColor: "#70cc84",
-    externalUrlOnly: true,
-    externalUrl: "https://pdrmenezes.github.io/blured-mousetrail-effect-with-animated-text/",
-    published: true,
-    featured: false,
-    get slug() {
-      return this.title.toLowerCase().split(" ").join("-");
-    },
-  },
-  {
-    title: "Interactive Mouse Cursor",
-    year: "2022",
-    roles: ["Development"],
-    popoverImageSrc: "interactive-mouse-cursror.webp",
-    popoverBgColor: "#F0F0F0",
-    externalUrlOnly: true,
-    externalUrl: "https://pdrmenezes.github.io/Mouse-Trailing-Interactive-Mouse-Icons-w-CSS-JS/",
-    published: true,
-    featured: false,
-    get slug() {
-      return this.title.toLowerCase().split(" ").join("-");
-    },
-  },
-  {
-    title: "Wordle-like",
-    year: "2022",
-    roles: ["Development"],
-    popoverImageSrc: "wordle-like.webp",
-    popoverBgColor: "tomato",
-    externalUrlOnly: true,
-    externalUrl: "https://pdrmenezes.github.io/Wordle-Like-HTML-CSS-JS-/",
-    published: true,
-    featured: false,
-    get slug() {
-      return this.title.toLowerCase().split(" ").join("-");
-    },
-  },
-
-  {
-    title: "Google's Dino Demo",
-    // Best Chrome feature
-    year: "2022",
-    roles: ["Development"],
-    popoverImageSrc: "google-dino.webp",
-    popoverBgColor: "#545454",
-    externalUrlOnly: true,
-    externalUrl: "https://pdrmenezes.github.io/JS_Dino_Game/",
-    published: true,
-    featured: false,
-    get slug() {
-      return this.title.toLowerCase().split(" ").join("-");
-    },
-  },
-  {
-    title: "Iluminated Card Corners",
-    // thinking about a social project where we iluminate people's dangerous walks home
-    year: "2022",
-    externalUrlOnly: true,
-    roles: ["Development"],
-    popoverImageSrc: "iluminated-corners.webp",
-    popoverBgColor: "#F5F5F5",
-    externalUrl: "https://pdrmenezes.github.io/CSS_JS_lit-up-cards-with-css-and-js/",
-    published: true,
-    featured: false,
+    featured: true,
     get slug() {
       return this.title.toLowerCase().split(" ").join("-");
     },
