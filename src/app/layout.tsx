@@ -69,14 +69,22 @@ const navLinks = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={nohemi.className}>
-      <body className="flex h-screen flex-col scroll-smooth bg-blackish p-4 text-whiteish antialiased">
+      <body className="flex h-screen flex-col scroll-smooth bg-blackish p-4 tracking-wide text-whiteish antialiased">
         <header className="flex flex-col items-center justify-between gap-4 text-center text-white sm:px-6 sm:py-4 md:flex-row lg:flex-row" id="top">
           <Link href="/">
-            <Image className="animate-pulse transition-transform md:scale-150" src={whiteCircle} alt="white icon" width={40} height={40} />
+            <Image
+              className="animate-pulse transition-transform motion-reduce:animate-none motion-reduce:opacity-75 md:scale-150"
+              src={whiteCircle}
+              alt="white icon"
+              width={40}
+              height={40}
+            />
           </Link>
           <MainNavigation navLinks={navLinks} />
         </header>
-        <main className="flex-1 overflow-y-auto px-4 py-20 md:py-40 lg:px-20">{children}</main>
+        <main className="flex-1 overflow-y-auto px-4 py-20 md:py-40 lg:px-20">
+          <section className="mx-auto h-full max-w-5xl">{children}</section>
+        </main>
       </body>
     </html>
   );
