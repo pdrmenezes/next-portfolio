@@ -1,9 +1,44 @@
 export const CURRICULUM_DATA = [
   {
-    company: "Hub XP (full time)",
-    roles: ["front-end developer"],
-    time: "jul 2023 - present",
-    mainSkills: ["Next.js", "React", "Redux", "Typescript", "Material UI", "Styled Components", "REST APIs", "MongoDB"],
+    company: "banco do brasil",
+    roles: ["software engineer"],
+    time: "2025 - present",
+    mainSkills: ["angular", "typescript", "bootstrap", "scss", "rest apis", "mongodb", "ibm db2"],
+    description: (
+      <>
+        <p>
+          Banco do Brasil is one of the largest financial institutions in Latin America, serving over 70 million customers over 4,000 branches and
+          across digital platforms.
+        </p>
+        <br />
+        <p>
+          Internationally, Banco do Brasil maintains a presence in over 20 countries, supporting global trade, investment, and Brazilian companies
+          abroad.
+        </p>
+        <br />
+        <p>
+          The bank is consistently ranked among the top financial institutions in Latin America by assets and market value. It also plays a central
+          role in digital banking innovation in Brazil, supported by a large and complex IT infrastructure that handles high transaction volumes and
+          mission-critical systems daily.
+        </p>
+        <br />
+        <p>
+          As a software engineer, I design and develop tools—primarily for internal use to optimize workflows and improve operational efficiency
+          across the company.
+        </p>
+        <br />
+        <p>
+          I work with <span className="font-semibold">Angular</span> integrated with <span className="font-semibold">Java-based RESTful APIs</span> to
+          create robust, scalable solutions, enhancing processes and services for a wide range of users.
+        </p>
+      </>
+    ),
+  },
+  {
+    company: "hub xp",
+    roles: ["fullstack developer"],
+    time: "2023 - 2025",
+    mainSkills: ["next.js", "react", "redux", "typescript", "material ui", "styled components", "rest apis", "mongodb"],
     description: (
       <>
         <p className="font-medium">Medcel | Afya</p>
@@ -18,7 +53,7 @@ export const CURRICULUM_DATA = [
           accessible and appealing visuals.
         </p>
         <br />
-        <p>My responsibilities include:</p>
+        <p>My responsibilities included:</p>
         <br />
         <div className="pl-4">
           <li>
@@ -35,13 +70,13 @@ export const CURRICULUM_DATA = [
     ),
   },
   {
-    company: "Tech Pro Bem (volunteer)",
+    company: "tech pro bem",
     roles: ["front-end developer"],
-    time: "aug 2024 - present",
-    mainSkills: ["Next.js", "React", "Typescript", "CMS"],
+    time: "2024 - 2025",
+    mainSkills: ["next.js", "react", "typescript", "contentful"],
     description: (
       <>
-        <p>As a volunteer front-end developer at Tech Pro bem I am responsible for:</p>
+        <p>As a volunteer front-end developer at Tech Pro bem I was responsible for:</p>
         <br />
         <div className="pl-4">
           <li>
@@ -59,30 +94,10 @@ export const CURRICULUM_DATA = [
     ),
   },
   {
-    company: "Oportunidades (volunteer)",
-    roles: ["front-end developer"],
-    time: "jun 2024 - present",
-    mainSkills: ["Next.js", "React", "Typescript", "CMS"],
-    description: (
-      <>
-        <p>
-          In Mozambique, students face a significant information gap regarding educational opportunities. The scarcity of updated information about
-          scholarships and exchange programs on government websites keeps students from making informed decisions about courses, institutions, and
-          scholarships, limiting their educational and professional potential.
-        </p>
-        <br/>
-        <p>
-          Oportunidades&apos; goal is to be a comprehensive online platform that aggregates information on Mozambican universities nationwide. The platform
-          will bridge the information gap, providing detailed insights into courses, admission requirements, and deadlines across all provinces.
-        </p>
-      </>
-    ),
-  },
-  {
-    company: "Tiziu Technology (contractor)",
+    company: "tiziu technology",
     roles: ["front-end developer", "ui designer"],
-    time: "aug 2022 - present",
-    mainSkills: ["Next.js", "React", "REST APIs", "Tailwind CSS", "Typescript", "Figma"],
+    time: "2022 - 2025",
+    mainSkills: ["next.js", "react", "rest apis", "tailwind css", "typescript", "figma"],
     description: (
       <>
         <p>
@@ -113,10 +128,10 @@ export const CURRICULUM_DATA = [
     ),
   },
   {
-    company: "Meridianos Creative Collective",
+    company: "meridianos creative collective",
     roles: ["co-founder"],
-    time: "jun 2019 - aug 2021",
-    mainSkills: ["React", "Redux", "Typescript", "Material UI", "Styled Components", "REST APIs", "MongoDB"],
+    time: "2019 - 2021",
+    mainSkills: ["react", "redux", "typescript", "material ui", "styled components", "rest apis", "mongodb"],
     description: (
       <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
         <p>
@@ -140,9 +155,9 @@ export const CURRICULUM_DATA = [
     ),
   },
   {
-    company: "Alliance Française de Brasilia",
+    company: "alliance française de brasilia",
     roles: ["marketing associate"],
-    time: "oct 2015 - fev 2019",
+    time: "2015 - 2019",
     mainSkills: ["HTML", "CSS", "Javascript", "PHP"],
     description: (
       <>
