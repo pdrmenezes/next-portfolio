@@ -22,9 +22,9 @@ export type TProjectData = {
 
 export const PROJECTS_DATA: TProjectData[] = [
   {
-    title: "ABRE",
+    title: "abre",
     year: "2024",
-    roles: ["Development"],
+    roles: ["development"],
     popoverImageSrc: "abre-popover.webp",
     popoverBgColor: "#177873",
     externalUrlOnly: false,
@@ -55,9 +55,9 @@ export const PROJECTS_DATA: TProjectData[] = [
     },
   },
   {
-    title: "Memory Lake",
+    title: "memory lake",
     year: "2023",
-    roles: ["Creation", "Development"],
+    roles: ["creation", "development"],
     popoverImageSrc: "memory-lake-popover.webp",
     popoverBgColor: "#0000FF",
     externalUrlOnly: false,
@@ -91,9 +91,9 @@ export const PROJECTS_DATA: TProjectData[] = [
   },
 
   {
-    title: "Movimento Redes",
+    title: "movimento redes",
     year: "2023",
-    roles: ["Design"],
+    roles: ["design"],
     popoverImageSrc: "movimento-redes-popover.webp",
     popoverBgColor: "#422969",
     externalUrlOnly: false,
@@ -116,9 +116,9 @@ export const PROJECTS_DATA: TProjectData[] = [
     },
   },
   {
-    title: "Break Out?",
+    title: "break out?",
     year: "2023",
-    roles: ["Design", "Copy", "Development"],
+    roles: ["design", "copy", "development"],
     popoverImageSrc: "break-out.webp",
     popoverBgColor: "#F0F0F0",
     externalUrlOnly: true,
