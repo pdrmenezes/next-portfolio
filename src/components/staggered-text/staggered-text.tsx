@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import { JSX, CSSProperties } from "react";
 
 export type StaggeredTextProps = {
   text: string;
@@ -26,9 +26,9 @@ export default function StaggeredText({ text, className = "", as: Component = "h
             {
               "--i": i,
               "--delay-base": `${delay}s`,
-            } as React.CSSProperties
+            } as CSSProperties
           }
-          className="motion-reduce:animate-fade animate-stagger inline-block opacity-0"
+          className="inline-block animate-stagger opacity-0 motion-reduce:animate-fade"
         >
           {word}&nbsp;
         </span>
