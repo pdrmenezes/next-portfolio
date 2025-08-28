@@ -42,7 +42,7 @@ export default function ContactPage() {
 
         <div className="p-4 md:col-start-2 md:row-start-2 md:p-4">
           <h2 className="font-semibold">_</h2>
-          <p>your turn (:</p>
+          <p>your move (:</p>
         </div>
       </div>
     </div>
