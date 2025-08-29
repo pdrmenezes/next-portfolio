@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { TProjectData } from "@/data/projectsData";
-import { motion } from "motion/react";
+import { motion, easeInOut } from "motion/react";
 
 interface ProjectPopoverProps {
   projectPopover: {
@@ -27,7 +27,7 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
       left: cursorPosition.x,
       transition: {
         duration: 0.4,
-        ease: [0.76, 0, 0.24, 1],
+        ease: easeInOut,
         top: {
           type: "spring",
           damping: 15,
@@ -42,7 +42,7 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
         },
       },
     },
-    closed: { scale: 0, x: "-50%", y: "-50%", transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] } },
+    closed: { scale: 0, x: "-50%", y: "-50%", transition: { duration: 0.4, ease: easeInOut } },
   };
 
   return (
@@ -56,7 +56,6 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
       <div
         id="popoverSlider"
         className="absolute h-full w-full transition-[]"
-        // transition from: https://easings.net/
         style={{ top: `${-100 * projectIndex}%`, transition: "top 0.5s cubic-bezier(0.76, 0, 0.24, 1)" }}
       >
         {projectsData.map((project) => (
