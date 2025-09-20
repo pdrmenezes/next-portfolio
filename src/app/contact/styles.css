@@ -1,32 +1,12 @@
 #email-toast {
   visibility: hidden;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.3s ease;
 }
 
 #email-toast.show {
   visibility: visible;
-  animation:
-    fadein 0.5s,
-    fadeout 0.5s 2.5s;
-}
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
+  opacity: 1;
+  transform: translateY(0);
 }
