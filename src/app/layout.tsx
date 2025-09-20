@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
 import whiteCircle from "@/assets/icons/white_circle.svg";
+import LiteVersionBanner from "@/components/LiteVersionBanner";
 import MainNavigation from "@/components/MainNavigation";
 
 export const metadata = {
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={nohemi.className}>
       <body className="flex h-screen flex-col scroll-smooth bg-blackish p-4 tracking-wide text-whiteish antialiased">
+        <LiteVersionBanner />
         <header className="flex flex-col items-center justify-between gap-4 text-center text-white sm:px-6 sm:py-4 md:flex-row lg:flex-row" id="top">
           <Link href="/">
             <Image
