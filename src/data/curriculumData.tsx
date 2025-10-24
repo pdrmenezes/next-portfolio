@@ -135,8 +135,8 @@ export const CURRICULUM_DATA = [
     description: (
       <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
         <p>
-          Meridianos dedicated itself to strengthening brands through comprehensive branding strategies, social media content creation, website
-          development, while also serving as a creative content hub producing compelling multimedia content.
+          ‣ meridianos is a strategic and creative hub developing innovative projects across industries with creative solutions for complex business challenges.
+‣ through an interdisciplinary approach, we delivered campaigns, content, research and products for clients in Brazil and Portugal.
         </p>
         <br />
         <p>As one of four co-founders, my activities mainly consisted of:</p>
