@@ -131,12 +131,13 @@ export const CURRICULUM_DATA = [
     company: "meridianos creative collective",
     roles: ["co-founder"],
     time: "2019 - 2021",
-    mainSkills: ["react", "redux", "typescript", "material ui", "styled components", "rest apis", "mongodb"],
+    mainSkills: ["html", "css", "javascript", "photoshop", "illustrator", "figma"],
     description: (
       <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
         <p>
-          ‣ meridianos is a strategic and creative hub developing innovative projects across industries with creative solutions for complex business challenges.
-‣ through an interdisciplinary approach, we delivered campaigns, content, research and products for clients in Brazil and Portugal.
+          Meridianos is a strategic and creative hub developing innovative projects across industries with creative solutions for complex business
+          challenges. Through an interdisciplinary approach, we delivered campaigns, content, research and products for clients in Brazil and
+          Portugal.
         </p>
         <br />
         <p>As one of four co-founders, my activities mainly consisted of:</p>
