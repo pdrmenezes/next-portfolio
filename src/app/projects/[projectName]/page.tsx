@@ -35,7 +35,7 @@ export default async function ProjectPage(props: Props) {
           {projectInfo?.title} / {projectInfo?.year}{" "}
           {projectInfo?.externalUrl && (
             <Link href={projectInfo?.externalUrl} className="ml-2 inline-flex transition-transform hover:-translate-y-0.5 hover:translate-x-0.5">
-              <DownArrow className="size-6 translate-y-1 -rotate-[135deg] stroke-whiteish stroke-2 sm:size-8" />
+              <DownArrow className="size-6 translate-y-1 -rotate-135 stroke-whiteish stroke-2 sm:size-8" />
             </Link>
           )}
         </h3>

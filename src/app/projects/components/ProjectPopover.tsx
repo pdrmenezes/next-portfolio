@@ -48,7 +48,7 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
   return (
     <motion.div
       id="popoverContainer"
-      className="pointer-events-none absolute left-1/2 top-1/2 flex h-60 w-80 -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden"
+      className="pointer-events-none absolute left-1/2 top-1/2 flex h-60 w-80 items-center justify-center overflow-hidden"
       variants={openPopoverAnimation}
       initial="initial"
       animate={isActive ? "open" : "closed"}

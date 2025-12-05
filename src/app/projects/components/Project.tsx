@@ -30,7 +30,7 @@ export function Project({ projectIndex, project, setProjectPopover }: ProjectPro
         </div>
       </div>
       <span className="not-sr-only sm:sr-only">
-        <DownArrow className={`size-4 ${project.externalUrlOnly ? "-rotate-[135deg]" : "-rotate-90"} stroke-whiteish stroke-2`} />
+        <DownArrow className={`size-4 ${project.externalUrlOnly ? "-rotate-135" : "-rotate-90"} stroke-whiteish stroke-2`} />
       </span>
     </Link>
   );

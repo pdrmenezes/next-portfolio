@@ -28,7 +28,7 @@ export function Email() {
         </div>
       </div>
       <div className="fixed bottom-8 left-1/2 z-50 mx-4 -translate-x-1/2 transform" id="email-toast">
-        <div className="rounded-full border border-whiteish/20 bg-blackish/95 px-4 py-2 shadow-lg backdrop-blur-sm">
+        <div className="rounded-full border border-whiteish/20 bg-blackish/95 px-4 py-2 shadow-lg backdrop-blur-xs">
           <div className="flex items-center gap-3">
             <div className="size-1.5 rounded-full bg-lightgreen"></div>
             <span className="text-xs text-whiteish">Email copied to clipboard</span>
