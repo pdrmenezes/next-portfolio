@@ -14,7 +14,7 @@ export default function Home() {
       as: "h2",
     },
     {
-      text: "currently based in Brasília",
+      text: "based in Brasília",
       className: "text-[clamp(1.2rem,5vw,3.125rem)] font-medium",
       as: "h2",
     },
