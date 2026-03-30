@@ -14,7 +14,7 @@ export function Project({ projectIndex, project, setProjectPopover }: ProjectPro
 
   return (
     <Link
-      className={`group flex w-full items-center border-t border-b-whiteish border-t-whiteish px-2 text-sm last:border-b sm:justify-between sm:gap-5 sm:px-10 sm:text-base ${
+      className={`group border-b-whiteish border-t-whiteish flex w-full items-center border-t px-2 text-sm last:border-b sm:justify-between sm:gap-5 sm:px-10 sm:text-base ${
         project.featured ? "py-8 sm:py-20" : "py-2 sm:py-5"
       } ${!project.published ? "cursor-default" : ""}`}
       onMouseEnter={() => setProjectPopover({ isActive: true, projectIndex: projectIndex })}
@@ -24,8 +24,8 @@ export function Project({ projectIndex, project, setProjectPopover }: ProjectPro
     >
       <div className="flex flex-1 flex-col justify-between sm:flex-row">
         <h4 className="transition-transform duration-500 group-hover:translate-x-2 sm:group-hover:-translate-x-4">{project.title}</h4>
-        <div className="flex items-center gap-4 transition-transform duration-500 group-hover:translate-x-2 sm:group-hover:translate-x-4 sm:justify-center sm:gap-10">
-          <h4 className="text-xs text-neutral-400 sm:text-base sm:text-whiteish">{formattedRoles}</h4>
+        <div className="flex items-center gap-4 transition-transform duration-500 group-hover:translate-x-2 sm:justify-center sm:gap-10 sm:group-hover:translate-x-4">
+          <h4 className="sm:text-whiteish text-xs text-neutral-400 sm:text-base">{formattedRoles}</h4>
           <h4 className="sr-only sm:not-sr-only">{project.year}</h4>
         </div>
       </div>

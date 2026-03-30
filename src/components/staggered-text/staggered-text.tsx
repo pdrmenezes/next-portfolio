@@ -28,7 +28,7 @@ export default function StaggeredText({ text, className = "", as: Component = "h
               "--delay-base": `${delay}s`,
             } as CSSProperties
           }
-          className="inline-block animate-stagger opacity-0 motion-reduce:animate-fade"
+          className="animate-stagger motion-reduce:animate-fade inline-block opacity-0"
         >
           {word}&nbsp;
         </span>

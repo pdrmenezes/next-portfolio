@@ -23,15 +23,15 @@ export default function AboutPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex size-6 items-center justify-center rounded-full bg-whiteish sm:size-8">
-              <DownArrow className="size-4 stroke-blackish stroke-2 sm:size-6" />
+            <div className="bg-whiteish flex size-6 items-center justify-center rounded-full sm:size-8">
+              <DownArrow className="stroke-blackish size-4 stroke-2 sm:size-6" />
             </div>
             <p className="text-sm font-medium sm:text-base">english cv</p>
             <div className="absolute inset-0 h-full w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="absolute left-0 top-0 size-3 border border-b-0 border-l-2 border-r-0 border-t-2 border-whiteish"></div>
-              <div className="absolute right-0 top-0 size-3 border border-b-0 border-l-0 border-r-2 border-t-2 border-whiteish"></div>
-              <div className="absolute bottom-0 right-0 size-3 border border-b-2 border-l-0 border-r-2 border-t-0 border-whiteish"></div>
-              <div className="absolute bottom-0 left-0 size-3 border border-b-2 border-l-2 border-r-0 border-t-0 border-whiteish"></div>
+              <div className="border-whiteish absolute top-0 left-0 size-3 border border-t-2 border-r-0 border-b-0 border-l-2"></div>
+              <div className="border-whiteish absolute top-0 right-0 size-3 border border-t-2 border-r-2 border-b-0 border-l-0"></div>
+              <div className="border-whiteish absolute right-0 bottom-0 size-3 border border-t-0 border-r-2 border-b-2 border-l-0"></div>
+              <div className="border-whiteish absolute bottom-0 left-0 size-3 border border-t-0 border-r-0 border-b-2 border-l-2"></div>
             </div>
           </a>
           <a
@@ -40,15 +40,15 @@ export default function AboutPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex size-6 items-center justify-center rounded-full bg-whiteish sm:size-8">
-              <DownArrow className="size-4 stroke-blackish stroke-2 sm:size-6" />
+            <div className="bg-whiteish flex size-6 items-center justify-center rounded-full sm:size-8">
+              <DownArrow className="stroke-blackish size-4 stroke-2 sm:size-6" />
             </div>
             <p className="text-sm font-medium sm:text-base">portuguese cv</p>
             <div className="absolute inset-0 h-full w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="absolute left-0 top-0 size-3 border border-b-0 border-l-2 border-r-0 border-t-2 border-whiteish"></div>
-              <div className="absolute right-0 top-0 size-3 border border-b-0 border-l-0 border-r-2 border-t-2 border-whiteish"></div>
-              <div className="absolute bottom-0 right-0 size-3 border border-b-2 border-l-0 border-r-2 border-t-0 border-whiteish"></div>
-              <div className="absolute bottom-0 left-0 size-3 border border-b-2 border-l-2 border-r-0 border-t-0 border-whiteish"></div>
+              <div className="border-whiteish absolute top-0 left-0 size-3 border border-t-2 border-r-0 border-b-0 border-l-2"></div>
+              <div className="border-whiteish absolute top-0 right-0 size-3 border border-t-2 border-r-2 border-b-0 border-l-0"></div>
+              <div className="border-whiteish absolute right-0 bottom-0 size-3 border border-t-0 border-r-2 border-b-2 border-l-0"></div>
+              <div className="border-whiteish absolute bottom-0 left-0 size-3 border border-t-0 border-r-0 border-b-2 border-l-2"></div>
             </div>
           </a>
         </div>

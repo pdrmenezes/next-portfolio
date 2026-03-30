@@ -70,13 +70,14 @@ const navLinks = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={nohemi.className}>
-      <body className="flex h-screen flex-col scroll-smooth bg-blackish p-4 tracking-wide text-whiteish antialiased">
+      <body className="bg-blackish text-whiteish flex h-screen flex-col scroll-smooth p-4 tracking-wide antialiased">
         <LiteVersionBanner />
         <header className="flex flex-col items-center justify-between gap-4 text-center text-white sm:px-6 sm:py-4 md:flex-row lg:flex-row" id="top">
           <Link href="/">
             <Image
               className="animate-pulse transition-transform motion-reduce:animate-none motion-reduce:opacity-75 md:scale-150"
               src={whiteCircle}
+              loading="eager"
               alt="white icon"
               width={40}
               height={40}

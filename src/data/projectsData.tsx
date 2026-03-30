@@ -70,7 +70,7 @@ export const PROJECTS_DATA: TProjectData[] = [
     content: {
       subtitle: "a platform to save and share memories",
       description: (
-        <p className="my-3 w-full text-whiteish">
+        <p className="text-whiteish my-3 w-full">
           Memory Lake was created in collaboration with incredibly talented brazilian Artist,{" "}
           <a
             href="https://laurapapa.com"

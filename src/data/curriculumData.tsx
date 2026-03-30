@@ -133,7 +133,7 @@ export const CURRICULUM_DATA = [
     time: "2019 - 2021",
     mainSkills: ["html", "css", "javascript", "photoshop", "illustrator", "figma"],
     description: (
-      <div className="my-3 max-w-prose text-balance px-4 leading-loose md:leading-relaxed">
+      <div className="my-3 max-w-prose px-4 leading-loose text-balance md:leading-relaxed">
         <p>
           Meridianos is a strategic and creative hub developing innovative projects across industries with creative solutions for complex business
           challenges. Through an interdisciplinary approach, we delivered campaigns, content, research and products for clients in Brazil and

@@ -30,12 +30,12 @@ export default async function ProjectPage(props: Props) {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="border-b border-b-whiteish pb-5">
+      <div className="border-b-whiteish border-b pb-5">
         <h3 className="text-2xl sm:text-3xl">
           {projectInfo?.title} / {projectInfo?.year}{" "}
           {projectInfo?.externalUrl && (
-            <Link href={projectInfo?.externalUrl} className="ml-2 inline-flex transition-transform hover:-translate-y-0.5 hover:translate-x-0.5">
-              <DownArrow className="size-6 translate-y-1 -rotate-135 stroke-whiteish stroke-2 sm:size-8" />
+            <Link href={projectInfo?.externalUrl} className="ml-2 inline-flex transition-transform hover:translate-x-0.5 hover:-translate-y-0.5">
+              <DownArrow className="stroke-whiteish size-6 translate-y-1 -rotate-135 stroke-2 sm:size-8" />
             </Link>
           )}
         </h3>
@@ -44,13 +44,13 @@ export default async function ProjectPage(props: Props) {
 
       <div className="flex flex-wrap gap-4">
         {projectInfo?.content?.tags?.map((tag) => (
-          <p key={tag} className="rounded-full bg-whiteish px-3 py-0.5 text-xs font-medium text-blackish">
+          <p key={tag} className="bg-whiteish text-blackish rounded-full px-3 py-0.5 text-xs font-medium">
             {tag}
           </p>
         ))}
       </div>
 
-      <section className="space-y-6 text-pretty text-sm sm:text-base">{projectInfo?.content?.description}</section>
+      <section className="space-y-6 text-sm text-pretty sm:text-base">{projectInfo?.content?.description}</section>
 
       <div className="grid gap-4 md:grid-cols-3">
         {projectInfo?.content?.contentImagesSrc?.map((imageSrc, index) => (

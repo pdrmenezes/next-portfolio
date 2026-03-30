@@ -48,14 +48,14 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
   return (
     <motion.div
       id="popoverContainer"
-      className="pointer-events-none absolute left-1/2 top-1/2 flex h-60 w-80 items-center justify-center overflow-hidden"
+      className="pointer-events-none absolute top-1/2 left-1/2 flex h-60 w-80 items-center justify-center overflow-hidden"
       variants={openPopoverAnimation}
       initial="initial"
       animate={isActive ? "open" : "closed"}
     >
       <div
         id="popoverSlider"
-        className="absolute h-full w-full transition-[]"
+        className="absolute h-full w-full"
         style={{ top: `${-100 * projectIndex}%`, transition: "top 0.5s cubic-bezier(0.76, 0, 0.24, 1)" }}
       >
         {projectsData.map((project) => (
@@ -65,7 +65,14 @@ export function ProjectPopover({ projectPopover, projectsData, cursorPosition }:
             style={{ backgroundColor: `${project.popoverBgColor}` }}
             className="flex h-full w-full items-center justify-center"
           >
-            <Image src={`/projects/images/${project.popoverImageSrc}`} alt={project.title} width={280} height={0} className="h-auto" />
+            <Image
+              src={`/projects/images/${project.popoverImageSrc}`}
+              alt={project.title}
+              width={280}
+              height={143}
+              className="h-auto"
+              loading="eager"
+            />
           </div>
         ))}
       </div>
